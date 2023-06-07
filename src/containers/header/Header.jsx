@@ -1,0 +1,27 @@
+import React from "react";
+import "./header.css";
+// import headerStyleFill from "../../assets/header-style-fill.png";
+
+const Header = () => {
+  return (
+    <>
+      {/* <div className="slant_div"></div> */}
+      <div className="header">
+        <div className="header__content">
+          <h1>BREAK THROUGH LIMITATIONS!</h1>
+          <h1>
+            GROW YOUR BUSINESS <span>DIGITALLY</span>
+          </h1>
+          <p>
+            We help B2B & B2C businesses thrive in the digital world through our
+            expert website design and SEO services that generate leads, drive
+            conversions and growth.
+          </p>
+          <button>Book Consultation</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Header;
