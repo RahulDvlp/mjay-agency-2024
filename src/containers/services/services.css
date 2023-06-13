@@ -1,0 +1,72 @@
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 56.25rem;
+  padding: 0 3.5rem;
+
+  background: url("../../assets/services-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services .title {
+  align-self: flex-start;
+}
+.services_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 9.938rem;
+
+  gap: 6.688rem;
+}
+
+/*  pc displays -1 */
+
+@media screen and (max-width: 1200px) {
+  .services_cards {
+    gap: 4rem;
+  }
+}
+
+/* pc displays - 2 */
+
+@media screen and (max-width: 1000px) {
+  .services_cards {
+    gap: 2rem;
+  }
+}
+/* tablet displays - 1 */
+
+@media screen and (max-width: 875px) {
+  .services {
+    padding: 0 3.5rem;
+    height: 68.75rem;
+  }
+  .services_cards {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+}
+/* mobile displays - 1 */
+
+@media screen and (max-width: 626px) {
+  .services_cards {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+/* mobile displays - 2 */
+
+@media screen and (max-width: 595px) {
+  .services_cards {
+    margin-top: 5rem;
+  }
+  .services {
+    height: 75rem;
+  }
+}

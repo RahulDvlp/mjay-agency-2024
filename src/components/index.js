@@ -3,3 +3,4 @@ export { default as Footer } from "./footer/Footer";
 export { default as FAQ } from "./faq/FAQ";
 export { default as CTA1 } from "./cta1/CTA1";
 export { default as CTA2 } from "./cta2/CTA2";
+export { default as ServiceCard } from "./serviceCard/ServiceCard";

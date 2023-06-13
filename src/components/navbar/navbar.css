@@ -44,7 +44,7 @@
 }
 .nav_menu button {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
 
@@ -72,6 +72,10 @@
 .nav_toggler {
   cursor: pointer;
   display: none;
+}
+.navbar ::selection {
+  background: #000;
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
