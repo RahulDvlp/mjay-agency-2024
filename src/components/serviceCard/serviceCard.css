@@ -14,6 +14,10 @@
 
   font-family: var(--font-family-montserrat);
 }
+.serviceCard ::selection {
+  background: var(--brand-yellow);
+  color: #fff;
+}
 
 .serviceCard img {
   width: 75px;
@@ -23,7 +27,7 @@
 .serviceCard h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 133%;
   text-align: center;
 
@@ -32,7 +36,7 @@
 
 .serviceCard p {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 155%;
   text-align: center;
@@ -63,11 +67,6 @@
     width: 65px;
     height: 65px;
   }
-
-  .serviceCard h1 {
-    font-size: 28px;
-  }
-
   .serviceCard p {
     font-size: 13px;
     line-height: 140%;
@@ -88,7 +87,7 @@
   }
 
   .serviceCard h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .serviceCard p {
@@ -112,7 +111,7 @@
   }
 
   .serviceCard h1 {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .serviceCard p {
@@ -135,7 +134,8 @@
   }
 
   .serviceCard h1 {
-    font-size: 22px;
+    font-size: 20px;
+    padding: 2px 0;
   }
 
   .serviceCard p {
@@ -149,14 +149,8 @@
     height: 50px;
   }
   .serviceCard {
-    padding: 5px 20px;
-
     width: 198px;
     height: 242px;
-  }
-
-  .serviceCard h1 {
-    font-size: 20px;
   }
 
   .serviceCard p {

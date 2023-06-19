@@ -1,0 +1,61 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 56.25rem;
+  padding: 0 3.5rem;
+
+  background: #fff;
+}
+.testimonials .title {
+  align-self: flex-start;
+}
+
+.testimonial_cards {
+  display: flex;
+  margin-top: 3rem;
+
+  overflow: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  scrollbar-width: none; /* Hide scrollbars on desktop */
+  -ms-overflow-style: none; /* Hide scrollbars on IE10+ */
+  scroll-snap-align: start;
+  padding-left: calc(50% - (400px / 2));
+}
+
+.testimonial-wrapper {
+  scroll-snap-align: start;
+  margin: 30px;
+}
+
+/* Optional: Add styling for scroll indicators */
+.testimonial_cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbars on Chrome/Safari */
+}
+/* tablet displays  */
+@media screen and (max-width: 850px) {
+  .testimonials {
+    padding: 0 2rem;
+    height: 41.938rem;
+  }
+  .testimonial_cards {
+    margin-top: 0.5rem;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 600px) {
+  .testimonials {
+    padding: 0 1rem;
+  }
+  .testimonials .title {
+    padding-left: 1rem;
+  }
+  .testimonial-wrapper {
+    scroll-snap-align: start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

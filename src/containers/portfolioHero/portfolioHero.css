@@ -1,0 +1,97 @@
+.protfolioHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 600px;
+
+  padding: 0 3.5rem;
+
+  background-image: url(../../assets/portfolio-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  scroll-behavior: smooth;
+
+  font-family: var(--font-family-bebas-neue);
+}
+.protfolioHero ::selection {
+  background: #000;
+  color: var(--brand-yellow);
+}
+.protfolioHero h1 {
+  width: 863px;
+
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+/* small desktop displays */
+@media screen and (max-width: 1000px) {
+  .protfolioHero h1 {
+    width: 550px;
+
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+  }
+}
+/* tablet displays */
+@media screen and (max-width: 720px) {
+  .protfolioHero h1 {
+    width: 500px;
+
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 600px) {
+  .protfolioHero {
+    height: 671px;
+  }
+  .protfolioHero {
+    padding: 0 2.5rem;
+  }
+  .protfolioHero h1 {
+    width: 450px;
+
+    text-align: start;
+
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+  }
+}
+/* mobile displays 2 */
+@media screen and (max-width: 370px) {
+  .protfolioHero h1 {
+    width: 350px;
+
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+  }
+}
+/* mobile displays 3 */
+@media screen and (max-width: 320px) {
+  .protfolioHero {
+    padding: 0 1.5rem;
+
+    height: 520px;
+  }
+  .protfolioHero h1 {
+    width: 210px;
+
+    font-size: 34px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+  }
+}

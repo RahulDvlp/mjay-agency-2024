@@ -14,7 +14,9 @@ const Header = () => {
           expert website design and SEO services that generate leads, drive
           conversions and growth.
         </p>
-        <button>Book Consultation</button>
+        <a href="tel:+916374233813">
+          <button>Book Consultation</button>
+        </a>
       </div>
     </div>
   );

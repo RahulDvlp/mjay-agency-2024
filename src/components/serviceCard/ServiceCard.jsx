@@ -4,7 +4,7 @@ import "./serviceCard.css";
 const ServiceCard = (props) => {
   return (
     <div className="serviceCard">
-      <img src={props.serviceImg} alt="mjay-digital-agency" />
+      <img src={props.serviceImg} alt="mjay-digital-agency" loading="lazy" />
       <h1>{props.serviceTitle}</h1>
       <p>{props.serviceDescription}</p>
     </div>

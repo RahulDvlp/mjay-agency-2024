@@ -1,0 +1,162 @@
+.about_hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 3.5rem;
+
+  height: 38.5rem;
+
+  background-color: var(--brand-yellow);
+}
+.about_hero ::selection {
+  background: #000;
+  color: #fff;
+}
+.about_hero h1 {
+  margin: 0;
+  font-family: var(--font-family-bebas-neue);
+}
+.about_hero h1:first-child {
+  width: 256px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.about_hero h1:nth-child(2) {
+  width: 1000px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.about_hero p {
+  width: 730px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: 0.015em;
+  font-family: var(--font-family-montserrat);
+}
+
+/* small desktop displays 1 */
+@media screen and (max-width: 1050px) {
+  .about_hero h1:first-child {
+    width: 256px;
+
+    font-size: 50px;
+  }
+
+  .about_hero h1:nth-child(2) {
+    width: 667px;
+
+    font-size: 90px;
+  }
+
+  .about_hero p {
+    width: 600px;
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+/* tablet displays */
+@media screen and (max-width: 768px) {
+  .about_hero h1:first-child {
+    width: 200px;
+
+    font-size: 50px;
+  }
+
+  .about_hero h1:nth-child(2) {
+    width: 500px;
+
+    font-size: 70px;
+  }
+
+  .about_hero p {
+    width: 470px;
+
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 600px) {
+  .about_hero {
+    height: 500px;
+  }
+  .about_hero h1:first-child {
+    width: 200px;
+
+    font-size: 35px;
+  }
+
+  .about_hero h1:nth-child(2) {
+    width: 337px;
+
+    font-size: 50px;
+  }
+
+  .about_hero p {
+    width: 335px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 400px) {
+  .about_hero h1:first-child {
+    width: 200px;
+
+    font-size: 30px;
+  }
+
+  .about_hero h1:nth-child(2) {
+    width: 270px;
+
+    font-size: 40px;
+  }
+
+  .about_hero p {
+    width: 268px;
+
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+/* mobile displays 2 */
+@media screen and (max-width: 320px) {
+  .about_hero h1:first-child {
+    width: 200px;
+
+    font-size: 30px;
+  }
+
+  .about_hero h1:nth-child(2) {
+    width: 240px;
+
+    font-size: 35px;
+  }
+
+  .about_hero p {
+    width: 235px;
+
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

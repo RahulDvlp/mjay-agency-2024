@@ -14,18 +14,23 @@
 }
 .title {
   font-family: var(--font-family-montserrat);
-  margin-top: 80px;
+}
+.title ::selection {
+  background: #000;
+  color: #fff;
 }
 .title h1 {
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0;
   text-transform: uppercase;
+
+  color: #444444;
 }
 .bar {
-  width: 150px;
-  height: 21px;
+  width: 100px;
+  height: 15px;
   background-color: var(--brand-yellow);
 }
 .mission_content {
@@ -60,7 +65,7 @@
     height: 41.938rem;
   }
   .title h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .mission_content h1 {
     width: 550px;
@@ -73,7 +78,7 @@
 
 @media screen and (max-width: 600px) {
   .title h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .mission_content h1 {
     width: 326px;

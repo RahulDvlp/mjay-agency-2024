@@ -1,0 +1,52 @@
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 43.75rem;
+
+  background: #fff;
+}
+.works .title {
+  align-self: flex-start;
+  padding: 0 3.5rem;
+}
+
+.work_cards {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+
+  overflow: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  scrollbar-width: none; /* Hide scrollbars on desktop */
+  -ms-overflow-style: none; /* Hide scrollbars on IE10+ */
+  scroll-snap-align: start;
+  padding-left: calc(50% - (400px / 2));
+}
+
+.work-wrapper {
+  scroll-snap-align: start;
+  margin: 15px;
+}
+
+/* Optional: Add styling for scroll indicators */
+.work_cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbars on Chrome/Safari */
+}
+
+/* small desktop displays */
+@media screen and (max-width: 933px) {
+  .works {
+    height: 41.938rem;
+  }
+}
+
+/* mobile displays 1*/
+@media screen and (max-width: 600px) {
+  .works .title {
+    padding: 0 2rem;
+  }
+}

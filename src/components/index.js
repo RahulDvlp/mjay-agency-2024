@@ -1,6 +1,10 @@
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Footer } from "./footer/Footer";
+export { default as CTA } from "./cta/CTA";
 export { default as FAQ } from "./faq/FAQ";
-export { default as CTA1 } from "./cta1/CTA1";
-export { default as CTA2 } from "./cta2/CTA2";
 export { default as ServiceCard } from "./serviceCard/ServiceCard";
+export { default as TestimonialCard } from "./testimonialCard/TestimonialCard";
+export { default as FAQCard } from "./faqCard/FAQCard";
+export { default as WorkCard } from "./workCard/WorkCard";
+export { default as ValueCard } from "./valueCard/ValueCard";
+export { default as ContactForm } from "./contactForm/ContactForm";

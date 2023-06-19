@@ -1,0 +1,57 @@
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  padding: 5rem 3.5rem;
+}
+
+.values .title {
+  align-self: flex-start;
+}
+
+.value_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 5rem;
+
+  gap: 86px;
+}
+
+/* small desktop displays */
+@media screen and (max-width: 1200px) {
+  .value_cards {
+    gap: 60px;
+  }
+}
+/* tablet displays */
+@media screen and (max-width: 1200px) {
+  .value_cards {
+    gap: 40px;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 600px) {
+  .values {
+    padding: 5rem 2rem;
+  }
+  .value_cards {
+    margin-top: 4rem;
+
+    gap: 20px;
+  }
+}
+
+/* mobile displays 2 */
+@media screen and (max-width: 404px) {
+  .values .title {
+    padding: 0 0 0 2rem;
+  }
+  .values {
+    padding: 5rem 0;
+  }
+}

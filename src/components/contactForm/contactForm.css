@@ -1,0 +1,263 @@
+.contact_form_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: var(--font-family-montserrat);
+}
+
+.contact_form {
+  display: flex;
+  position: relative;
+  width: 700px;
+  height: 500px;
+
+  background: #fffefb;
+}
+
+.close_button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.getInTouch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+
+  background-color: var(--brand-yellow);
+}
+.getInTouch h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+
+  margin: 0;
+
+  text-transform: uppercase;
+  font-family: var(--font-family-bebas-neue);
+}
+.getInTouch h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  font-family: var(--font-family-montserrat);
+}
+.getInTouch .bold {
+  font-weight: 700;
+}
+
+.getInTouch_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.getInTouch a {
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px #4444;
+
+  border-radius: 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 100%;
+
+  background-color: #fff;
+}
+
+.form h1 {
+  font-family: var(--font-family-montserrat);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+
+  text-transform: uppercase;
+}
+
+.form button {
+  font-weight: 600;
+  font-size: 15px;
+
+  margin-top: 8px;
+  width: 100px;
+  height: 40px;
+
+  text-transform: uppercase;
+
+  border: 1px solid #eee;
+  background-color: var(--brand-yellow);
+
+  cursor: pointer;
+}
+
+.label_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_input label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #444444;
+
+  margin: 8px 0;
+}
+.label_input input {
+  width: 250px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 15px;
+
+  color: #444444;
+
+  padding: 0 5px;
+
+  border: 2px solid #d9d8d8;
+}
+.label_input textarea {
+  width: 250px;
+  height: 60px;
+
+  font-weight: 500;
+  font-size: 15px;
+
+  color: #444444;
+
+  padding: 0 5px;
+
+  resize: none;
+
+  border: 2px solid #d9d8d8;
+}
+
+.form_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* tablet displays */
+@media screen and (max-width: 850px) {
+  .contact_form {
+    width: 500px;
+    height: 400px;
+  }
+
+  .getInTouch h1 {
+    font-size: 35px;
+  }
+  .getInTouch h2 {
+    font-size: 14px;
+  }
+  .getInTouch_content {
+    gap: 18px;
+  }
+  .getInTouch a {
+    margin: 5px;
+  }
+
+  .form h1 {
+    font-size: 28px;
+  }
+
+  .form button {
+    font-size: 14px;
+
+    width: 90px;
+    height: 35px;
+  }
+
+  .label_input label {
+    font-size: 14px;
+
+    margin: 4px 0;
+  }
+  .label_input input {
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .label_input textarea {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* mobile displays 1*/
+@media screen and (max-width: 600px) {
+  .form h1 {
+    font-size: 24px;
+  }
+  .contact_form {
+    width: 300px;
+    height: 450px;
+  }
+  .getInTouch {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* mobile displays 2*/
+@media screen and (max-width: 320px) {
+  .contact_form {
+    width: 240px;
+    height: 380px;
+  }
+
+  .form h1 {
+    font-size: 22px;
+  }
+
+  .form button {
+    font-size: 12px;
+  }
+
+  .label_input label {
+    font-size: 12px;
+  }
+  .label_input input {
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .label_input textarea {
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+  }
+}

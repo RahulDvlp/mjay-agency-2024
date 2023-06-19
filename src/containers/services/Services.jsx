@@ -16,20 +16,17 @@ const Services = () => {
         <ServiceCard
           serviceImg={design}
           serviceTitle="Design"
-          serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-        dolor sit amet,"
+          serviceDescription="Intuitive and visually appealing user interface design that enhances user experience and drive conversions."
         />
         <ServiceCard
           serviceImg={development}
           serviceTitle="Development"
-          serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-        dolor sit amet,"
+          serviceDescription="We forge customized websites with seamless functionality, responsive design, and user-friendly interfaces."
         />
         <ServiceCard
           serviceImg={seo}
           serviceTitle="SEO"
-          serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-        dolor sit amet,"
+          serviceDescription="Boost your online presence with strategic SEO techniques to improve visibility and drive organic traffic."
         />
       </div>
     </div>
