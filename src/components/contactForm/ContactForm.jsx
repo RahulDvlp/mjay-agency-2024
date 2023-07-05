@@ -83,10 +83,10 @@ const ContactForm = ({ onClose }) => {
               <a href="https://www.instagram.com/mjay_digital_solutions/">
                 <i className="fa-brands fa-instagram fa-lg"></i>
               </a>
-              <a href="https://www.linkedin.com/in/manikandan-j-638842264/">
+              <a href="https://www.linkedin.com/company/mjay-digital-solutions/">
                 <i className="fa-brands fa-linkedin-in fa-lg"></i>
               </a>
-              <a href="/">
+              <a href="https://www.facebook.com/profile.php?id=100094270606814">
                 <i className="fa-brands fa-facebook-f fa-lg"></i>
               </a>
             </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       document.getElementById("contactFormBtn").click();
-    }, 7000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
