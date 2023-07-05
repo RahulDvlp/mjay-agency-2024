@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./contactForm.css";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,7 +19,6 @@ const ContactForm = ({ onClose }) => {
       ...prevInputValue,
       [name]: value,
     }));
-    console.log(inputValue);
   }
 
   const sentUserData = async (e) => {
@@ -36,21 +34,22 @@ const ContactForm = ({ onClose }) => {
     } else if (phone === "") {
       toast.error("Mobile Number is required");
     } else {
-      
-      const response = await fetch("https://mjay-agency-backend.onrender.com/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          message,
-        }),
-      });
+      const response = await fetch(
+        "https://mjay-agency-backend.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            message,
+          }),
+        }
+      );
       const data = await response.json();
-      console.log(data);
       if (data.status === 201) {
         toast.success("Response has been submitted");
         setInputValue({
@@ -76,20 +75,20 @@ const ContactForm = ({ onClose }) => {
             <h2 className="bold">Call Us:</h2>
             <h2>+91 6374233813</h2>
             <h2 className="bold">Mail Us:</h2>
-            <h2>info@info.com</h2>
+            <h2>info@mjaydigitalsolutions.com</h2>
             <div className="socials">
-              <Link to="">
-                <i className="fa-brands fa-linkedin-in fa"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-facebook-f fa"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-instagram fa"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-whatsapp fa"></i>
-              </Link>
+              <a href="https://wa.me/+916374233813">
+                <i className="fa-brands fa-whatsapp fa-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/mjay_digital_solutions/">
+                <i className="fa-brands fa-instagram fa-lg"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/manikandan-j-638842264/">
+                <i className="fa-brands fa-linkedin-in fa-lg"></i>
+              </a>
+              <a href="/">
+                <i className="fa-brands fa-facebook-f fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>

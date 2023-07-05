@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
@@ -9,6 +9,14 @@ const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState("nav_toggler");
   const [navColor, setNavColor] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.getElementById("contactFormBtn").click();
+    }, 7000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   // Navbar background color change on scrool
   const navbarBackgroundColor = () => {
@@ -60,7 +68,9 @@ const Navbar = () => {
           <p>
             <Link to="/about">ABOUT</Link>
           </p>
-          <button onClick={handleOpenContactForm}>Let's Talk</button>
+          <button id="contactFormBtn" onClick={handleOpenContactForm}>
+            Let's Talk
+          </button>
         </div>
       </div>
       <div onClick={navToggle} className={toggleIcon}>

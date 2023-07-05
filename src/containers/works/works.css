@@ -21,10 +21,12 @@
   overflow: hidden;
   overflow-x: scroll;
   width: 100%;
-  scrollbar-width: none; /* Hide scrollbars on desktop */
-  -ms-overflow-style: none; /* Hide scrollbars on IE10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scroll-snap-align: start;
   padding-left: calc(50% - (400px / 2));
+
+  cursor: grab;
 }
 
 .work-wrapper {

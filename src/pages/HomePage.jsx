@@ -42,7 +42,7 @@ const HomePage = () => {
       <Header />
       <Mission />
       <Services />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ items={items} />
       <CTA
         ctaHeading="Let's Collaborate and Bring Your Project to Life."
