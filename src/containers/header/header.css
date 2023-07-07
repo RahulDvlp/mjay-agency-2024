@@ -97,6 +97,24 @@
   border: 2.1px solid #000000;
   font-family: var(--font-family-montserrat);
   cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+.header button:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__content i {
+  padding: 0 16px 0 0;
+  animation-duration: 2s;
+}
+@media screen and (max-width: 800px) {
+  .header__content i {
+    padding: 0 10px 0 0;
+  }
 }
 
 /* Small desktop displays */

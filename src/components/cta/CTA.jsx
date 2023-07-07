@@ -26,6 +26,7 @@ const CTA = (props) => {
               onClick={handleOpenContactForm}
               style={{ backgroundColor: props.CtabtnColor }}
             >
+              <i className="fa-solid fa-envelope fa-beat fa-lg"></i>
               {props.btnText}
             </button>
           </div>

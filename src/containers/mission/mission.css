@@ -58,6 +58,13 @@
   color: #fff;
 }
 
+/* Mini laptop */
+@media screen and (max-width: 1200px) {
+  .mission {
+    height: 45rem;
+  }
+}
+
 /* Tablet didplays - 1*/
 
 @media screen and (max-width: 900px) {
@@ -77,6 +84,9 @@
 /* Mobile didplays - 1*/
 
 @media screen and (max-width: 600px) {
+  .mission {
+    height: 30rem;
+  }
   .title h1 {
     font-size: 25px;
   }

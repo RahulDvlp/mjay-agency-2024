@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
@@ -10,13 +10,14 @@ const Navbar = () => {
   const [navColor, setNavColor] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      document.getElementById("contactFormBtn").click();
-    }, 10000);
+  // Contact form Auto popup
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     document.getElementById("contactFormBtn").click();
+  //   }, 11000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   // Navbar background color change on scrool
   const navbarBackgroundColor = () => {

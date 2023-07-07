@@ -32,7 +32,10 @@ const Header = () => {
           conversions and growth.
         </p>
         <a href="tel:+916374233813">
-          <button>Book Consultation</button>
+          <button>
+            <i className="fa-solid fa-phone-volume fa-shake fa-lg"></i>
+            Book Consultation
+          </button>
         </a>
       </div>
     </div>

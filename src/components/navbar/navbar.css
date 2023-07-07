@@ -63,8 +63,12 @@
   border: 2px solid #000000;
 
   cursor: pointer;
-}
 
+  transition: all 0.4s ease-in-out;
+}
+.nav_menu button:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
 .nav_toggler div {
   width: 1.7rem;
   height: 0.1rem;
