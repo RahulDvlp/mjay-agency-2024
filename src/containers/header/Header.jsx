@@ -37,6 +37,12 @@ const Header = () => {
             Book Consultation
           </button>
         </a>
+        <div className="mouse-scroll"></div>
+        <div className="arrow-scroll">
+          <div className="arrow"></div>
+          <div className="arrow"></div>
+          <div className="arrow"></div>
+        </div>
       </div>
     </div>
   );

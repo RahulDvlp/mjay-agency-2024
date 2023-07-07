@@ -9,7 +9,11 @@ const Footer = () => {
       <div className="footer">
         <div className="footer_container">
           <div className="footer_logo">
-            <img src={logo} alt="" loading="lazy" />
+            <img
+              src={logo}
+              alt="Tamilnadu Digital Marketing Solutions"
+              loading="lazy"
+            />
             <p>
               Welcome to MJay Digital Solutions, a professional digital agency
               adept at providing honest, bespoke digital solutions to businesses

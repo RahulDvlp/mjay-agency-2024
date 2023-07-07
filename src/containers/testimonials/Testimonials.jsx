@@ -60,6 +60,7 @@ const Testimonials = () => {
           <TestimonialCard
             testiImg={test1}
             testiReview="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu."
+            alt="Lead Generation Strategies"
             testiClient="Adam"
             testiPosition="CEO"
           />
@@ -68,6 +69,7 @@ const Testimonials = () => {
           <TestimonialCard
             testiImg={test2}
             testiReview="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu."
+            alt="Lead Generation Strategies"
             testiClient="Eve"
             testiPosition="Photographer"
           />
@@ -76,6 +78,7 @@ const Testimonials = () => {
           <TestimonialCard
             testiImg={test3}
             testiReview="Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu."
+            alt="Custom Web Design Solutions"
             testiClient="Ema"
             testiPosition="Designer"
           />

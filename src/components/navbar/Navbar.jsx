@@ -55,7 +55,7 @@ const Navbar = () => {
     <div className={navColor ? "_navbar _navbar_bg" : "_navbar"}>
       <div className="mjay_logo">
         <a href="/">
-          <img src={logo} alt="MJAY DIGITAL AGENCY" loading="lazy" />
+          <img src={logo} alt="MJAY DIGITAL SOLUTIONS" loading="lazy" />
         </a>
       </div>
       <div className="nav_menu-bg">

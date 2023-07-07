@@ -66,3 +66,11 @@
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 890px) {
+  .cursor,
+  .dot,
+  .expand {
+    display: none;
+  }
+}

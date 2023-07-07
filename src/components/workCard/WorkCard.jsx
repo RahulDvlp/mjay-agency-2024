@@ -23,7 +23,7 @@ const WorkCard = (props) => {
         ) : (
           <img
             src={props.work}
-            alt=""
+            alt={props.alt}
             loading="lazy"
             onLoad={() => setIsLoading(false)}
           />

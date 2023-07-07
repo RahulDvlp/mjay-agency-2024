@@ -55,11 +55,17 @@ const Works = () => {
       </div>
       <div className="work_cards" ref={scrollRef}>
         <div className="work-wrapper">
-          <WorkCard workName="sam creations" workBg="work_bg_1" work={work1} />
+          <WorkCard
+            workName="sam creations"
+            alt="E-commerce Website Development"
+            workBg="work_bg_1"
+            work={work1}
+          />
         </div>
         <div className="work-wrapper">
           <WorkCard
             workName="dj photo stories"
+            alt="SEO Optimization for Small Businesses"
             workBg="work_bg_2"
             work={work2}
           />
@@ -67,6 +73,7 @@ const Works = () => {
         <div className="work-wrapper">
           <WorkCard
             workName="marketing agency"
+            alt="Responsive Website Design"
             workBg="work_bg_3"
             work={work3}
           />

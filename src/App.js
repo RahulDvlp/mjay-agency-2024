@@ -39,7 +39,6 @@ function App() {
     <div>
       <div className="cursor"></div>
       <div className="dot"></div>
-
       <Suspense
         fallback={
           <div className="loader">
