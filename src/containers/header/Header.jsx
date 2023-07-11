@@ -34,7 +34,7 @@ const Header = () => {
         <a href="tel:+916374233813">
           <button>
             <i className="fa-solid fa-phone-volume fa-shake fa-lg"></i>
-            Book Consultation
+            Free Consultation
           </button>
         </a>
         <div className="mouse-scroll"></div>

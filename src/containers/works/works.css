@@ -48,7 +48,16 @@
 
 /* mobile displays 1*/
 @media screen and (max-width: 600px) {
+  .works {
+    height: 35rem;
+  }
   .works .title {
     padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .works {
+    height: 33rem;
   }
 }

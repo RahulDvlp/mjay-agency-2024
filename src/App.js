@@ -3,6 +3,7 @@ import React, { Suspense, lazy, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga";
 import logo from "./assets/logo.svg";
+import { WhatsappBtn } from "./components";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
@@ -52,6 +53,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Suspense>
+      <WhatsappBtn />
     </div>
   );
 }

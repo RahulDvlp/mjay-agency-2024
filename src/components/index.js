@@ -8,3 +8,4 @@ export { default as FAQCard } from "./faqCard/FAQCard";
 export { default as WorkCard } from "./workCard/WorkCard";
 export { default as ValueCard } from "./valueCard/ValueCard";
 export { default as ContactForm } from "./contactForm/ContactForm";
+export { default as WhatsappBtn } from "./whatsappBtn/WhatsappBtn";
