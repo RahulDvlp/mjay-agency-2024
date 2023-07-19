@@ -20,8 +20,8 @@
   overflow: hidden;
   overflow-x: scroll;
   width: 100%;
-  scrollbar-width: none; /* Hide scrollbars on desktop */
-  -ms-overflow-style: none; /* Hide scrollbars on IE10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scroll-snap-align: start;
   padding-left: calc(50% - (400px / 2));
 }
@@ -31,9 +31,22 @@
   margin: 30px;
 }
 
-/* Optional: Add styling for scroll indicators */
+.navigation button {
+  background: #fff;
+  border: none;
+
+  margin: 5px 20px;
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+.navigation button:active {
+  animation: none !important;
+  transition: none !important;
+}
+/* Optional: styling for scroll indicators */
 .testimonial_cards::-webkit-scrollbar {
-  display: none; /* Hide scrollbars on Chrome/Safari */
+  display: none;
 }
 /* tablet displays  */
 @media screen and (max-width: 850px) {

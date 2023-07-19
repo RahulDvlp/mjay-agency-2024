@@ -23,6 +23,10 @@
   background: #fff;
   box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.04);
 }
+.mjay_logo img {
+  width: 130px;
+  height: 55.47px;
+}
 ._navbar a {
   text-decoration: none;
   color: inherit;
@@ -59,8 +63,12 @@
   border: 2px solid #000000;
 
   cursor: pointer;
-}
 
+  transition: all 0.4s ease-in-out;
+}
+.nav_menu button:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
 .nav_toggler div {
   width: 1.7rem;
   height: 0.1rem;

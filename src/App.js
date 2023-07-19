@@ -2,6 +2,7 @@ import "./App.css";
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga";
+import logo from "./assets/logo.svg";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
@@ -16,13 +17,7 @@ function App() {
       <Suspense
         fallback={
           <div className="loader">
-            <section class="dots-container">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </section>
+            <img className="blink-animation" src={logo} alt="" />
           </div>
         }
       >

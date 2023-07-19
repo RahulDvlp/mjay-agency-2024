@@ -10,6 +10,7 @@
   background: var(--brand-yellow);
   color: #fff;
 }
+
 .workCard h1 {
   font-style: normal;
   font-weight: 600;
@@ -62,6 +63,11 @@
 
 .workImg img {
   width: 80%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.workImg img:hover {
+  scale: 1.05;
 }
 
 /* small desktop displays */

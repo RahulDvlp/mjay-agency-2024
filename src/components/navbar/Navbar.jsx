@@ -10,6 +10,15 @@ const Navbar = () => {
   const [navColor, setNavColor] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
 
+  // Contact form Auto popup
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     document.getElementById("contactFormBtn").click();
+  //   }, 11000);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   // Navbar background color change on scrool
   const navbarBackgroundColor = () => {
     if (window.scrollY >= 30) {
@@ -46,7 +55,7 @@ const Navbar = () => {
     <div className={navColor ? "_navbar _navbar_bg" : "_navbar"}>
       <div className="mjay_logo">
         <a href="/">
-          <img src={logo} alt="MJAY DIGITAL AGENCY" loading="lazy" />
+          <img src={logo} alt="MJAY DIGITAL SOLUTIONS" loading="lazy" />
         </a>
       </div>
       <div className="nav_menu-bg">
@@ -60,7 +69,9 @@ const Navbar = () => {
           <p>
             <Link to="/about">ABOUT</Link>
           </p>
-          <button onClick={handleOpenContactForm}>Let's Talk</button>
+          <button id="contactFormBtn" onClick={handleOpenContactForm}>
+            Let's Talk
+          </button>
         </div>
       </div>
       <div onClick={navToggle} className={toggleIcon}>

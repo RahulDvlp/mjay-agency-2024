@@ -4,10 +4,11 @@
   justify-content: center;
   flex-direction: column;
 
-  height: 56.25rem;
+  height: 67rem;
   padding: 0 3.5rem;
 
   background: url("../../assets/services-bg.png");
+  background-color: #eee;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,17 +20,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   margin-top: 9.938rem;
 
-  gap: 6.688rem;
+  gap: 3rem 6.688rem;
 }
 
 /*  pc displays -1 */
 
 @media screen and (max-width: 1200px) {
+  .services {
+    height: 60rem;
+  }
   .services_cards {
     gap: 4rem;
+
+    margin-top: 5rem;
   }
 }
 
@@ -72,7 +79,15 @@
     margin-top: 3rem;
   }
   .services {
-    height: 70rem;
+    height: 50rem;
+  }
+}
+@media screen and (max-width: 548px) {
+  .services_cards {
+    margin-top: 3rem;
+  }
+  .services {
+    height: 86rem;
   }
 }
 /* mobile displays - 3 */
@@ -82,6 +97,6 @@
     margin-top: 3rem;
   }
   .services {
-    height: 68rem;
+    height: 85rem;
   }
 }

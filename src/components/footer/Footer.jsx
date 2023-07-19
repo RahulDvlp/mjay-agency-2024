@@ -9,25 +9,29 @@ const Footer = () => {
       <div className="footer">
         <div className="footer_container">
           <div className="footer_logo">
-            <img src={logo} alt="" loading="lazy" />
+            <img
+              src={logo}
+              alt="Tamilnadu Digital Marketing Solutions"
+              loading="lazy"
+            />
             <p>
               Welcome to MJay Digital Solutions, a professional digital agency
               adept at providing honest, bespoke digital solutions to businesses
               of all sizes.
             </p>
             <div className="socials">
-              <Link to="">
-                <i class="fa-brands fa-linkedin-in fa-lg"></i>
-              </Link>
-              <Link to="">
-                <i class="fa-brands fa-facebook-f fa-lg"></i>
-              </Link>
-              <Link to="">
-                <i class="fa-brands fa-instagram fa-lg"></i>
-              </Link>
-              <Link to="wa.me/+916374233813">
-                <i class="fa-brands fa-whatsapp fa-lg"></i>
-              </Link>
+              <a href="https://wa.me/+916374233813">
+                <i className="fa-brands fa-whatsapp fa-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/mjay_digital_solutions/">
+                <i className="fa-brands fa-instagram fa-lg"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/mjay-digital-solutions/">
+                <i className="fa-brands fa-linkedin-in fa-lg"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100094270606814">
+                <i className="fa-brands fa-facebook-f fa-lg"></i>
+              </a>
             </div>
           </div>
           <div className="footer_content">
@@ -54,9 +58,6 @@ const Footer = () => {
               <Link to="/about">
                 <h2>about</h2>
               </Link>
-              <Link to="/">
-                <h2>contact</h2>
-              </Link>
             </div>
             <div className="footer_contact">
               <h1>
@@ -66,7 +67,7 @@ const Footer = () => {
               <h2>Call Us:</h2>
               <h2>+91 6374233813</h2>
               <h2>Mail Us:</h2>
-              <h2>info@info.com</h2>
+              <h2>info@mjaydigitalsolutions.com</h2>
             </div>
           </div>
         </div>
