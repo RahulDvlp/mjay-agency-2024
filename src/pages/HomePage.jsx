@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Navbar, Footer, CTA, FAQ } from "../components";
 import { Header, Mission, Services, Testimonials } from "../containers";
+import { Helmet } from "react-helmet";
 import ReactGA from "react-ga";
 
 const HomePage = () => {
@@ -38,11 +39,22 @@ const HomePage = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Mjay Digital Solutions-Best Website Designers in Tamilnadu
+        </title>
+        <meta
+          name="description"
+          content="Quality SEO services, web development in Tamilnadu. Boost online presence with expert digital solutions. Contact us for free consultation!"
+        />
+        <link rel="canonical" href="https://mjaydigitalsolutions.com/" />
+      </Helmet>
       <Navbar />
       <Header />
       <Mission />
       <Services />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FAQ items={items} />
       <CTA
         ctaHeading="Let's Collaborate and Bring Your Project to Life."
