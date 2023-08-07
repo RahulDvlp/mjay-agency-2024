@@ -23,7 +23,7 @@ const PortfolioHero = () => {
     >
       <h1>
         We don't just design websites. We forge online experiences that ignite
-        brands and conquer search engine dominance.
+        brands and captivate business <span style={{ color: "#fff" }}>.</span>
       </h1>
     </div>
   );

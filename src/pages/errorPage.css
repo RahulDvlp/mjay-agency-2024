@@ -1,0 +1,38 @@
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100vh;
+
+  background: url("../assets/404.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+
+  font-family: var(--font-family-montserrat);
+}
+
+.ErrorPage h4,
+h5 {
+  font-size: 32px;
+  color: #ffff;
+}
+
+@media screen and (max-width: 700px) {
+  .ErrorPage h4,
+  h5 {
+    font-size: 24px;
+    color: #ffff;
+  }
+}
+@media screen and (max-width: 369px) {
+  .ErrorPage h4,
+  h5 {
+    font-size: 20px;
+    color: #ffff;
+  }
+}

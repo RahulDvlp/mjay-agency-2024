@@ -5,9 +5,9 @@ import work1 from "../../assets/work1.png";
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
 import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+  HiOutlineArrowNarrowLeft,
+  HiOutlineArrowNarrowRight,
+} from "react-icons/hi";
 
 const Works = () => {
   const scrollRef = useRef(null);
@@ -25,7 +25,7 @@ const Works = () => {
     event.preventDefault();
     if (!isMouseDown) return;
     const x = event.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust the scrolling speed by multiplying with a factor
+    const walk = (x - startX) * 1;
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -81,10 +81,10 @@ const Works = () => {
       </div>
       <div className="navigation">
         <button className="nav-button" onClick={handleScrollLeft}>
-          <BsFillArrowLeftCircleFill size={25} color="#444444" />
+          <HiOutlineArrowNarrowLeft size={30} color="#000" />
         </button>
         <button className="nav-button" onClick={handleScrollRight}>
-          <BsFillArrowRightCircleFill size={25} color="#444444" />
+          <HiOutlineArrowNarrowRight size={30} color="#000" />
         </button>
       </div>
     </div>

@@ -5,9 +5,9 @@ import test1 from "../../assets/testimonial-pic-1.png";
 import test2 from "../../assets/testimonial-pic-2.png";
 import test3 from "../../assets/testimonial-pic-3.png";
 import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+  HiOutlineArrowNarrowLeft,
+  HiOutlineArrowNarrowRight,
+} from "react-icons/hi";
 
 const Testimonials = () => {
   const scrollRef = useRef(null);
@@ -86,10 +86,10 @@ const Testimonials = () => {
       </div>
       <div className="navigation">
         <button className="nav-button" onClick={handleScrollLeft}>
-          <BsFillArrowLeftCircleFill size={25} color="#444444" />
+          <HiOutlineArrowNarrowLeft size={30} color="#000" />
         </button>
         <button className="nav-button" onClick={handleScrollRight}>
-          <BsFillArrowRightCircleFill size={25} color="#444444" />
+          <HiOutlineArrowNarrowRight size={30} color="#000" />
         </button>
       </div>
     </div>

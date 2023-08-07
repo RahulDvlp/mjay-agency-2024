@@ -27,9 +27,9 @@ const Header = () => {
           GROW YOUR BUSINESS <span>DIGITALLY</span>
         </h1>
         <p>
-          We help B2B & B2C businesses thrive in the digital world through our
-          expert website design and SEO services that generate leads, drive
-          conversions and growth.
+          We help B2C businesses scale online with top-notch web design,
+          e-commerce solutions, and social media optimization. Partner with a
+          reliable digital agency in India for your digital success.
         </p>
         <a href="tel:+916374233813" target="_blank" rel="noreferrer">
           <button>

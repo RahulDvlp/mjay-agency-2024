@@ -6,3 +6,4 @@ export { default as PortfolioHero } from "./portfolioHero/PortfolioHero";
 export { default as Works } from "./works/Works";
 export { default as Values } from "./values/Values";
 export { default as AboutHero } from "./aboutHero/AboutHero";
+export { default as Contact } from "./contact/Contact";

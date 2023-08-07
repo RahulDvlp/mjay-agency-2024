@@ -11,10 +11,6 @@
   font-family: var(--font-family-montserrat);
 }
 
-.hubspot-form-wrapper {
-  max-width: 300px;
-}
-
 .mjay_contact_form_div {
   display: flex;
   flex-direction: column;
@@ -65,10 +61,6 @@
   .mjay_contact_form_div {
     width: 350px;
     height: 600px;
-  }
-
-  .hubspot-form-wrapper {
-    max-width: 200px;
   }
 }
 

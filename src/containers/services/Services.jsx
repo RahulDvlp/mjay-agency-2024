@@ -3,7 +3,6 @@ import "./services.css";
 import { ServiceCard } from "../../components";
 import design from "../../assets/design.svg";
 import development from "../../assets/development.svg";
-import seo from "../../assets/seo.svg";
 import ecommerce from "../../assets/ecommerce.svg";
 
 const Services = () => {
@@ -25,12 +24,6 @@ const Services = () => {
           serviceTitle="Development"
           alt="Effective Social Media Marketing Strategies"
           serviceDescription="We forge customized websites with seamless functionality, responsive design, and user-friendly interfaces."
-        />
-        <ServiceCard
-          serviceImg={seo}
-          serviceTitle="SEO"
-          alt="Professional Digital Marketing Agency"
-          serviceDescription="Boost your online presence with strategic SEO techniques to improve visibility and drive organic traffic."
         />
         <ServiceCard
           serviceImg={ecommerce}

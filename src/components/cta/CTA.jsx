@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./cta.css";
-import { ContactForm } from "../../components";
+import { Link } from "react-router-dom";
 
 const CTA = (props) => {
-  const [showContactForm, setShowContactForm] = useState(false);
-
-  const handleOpenContactForm = () => {
-    setShowContactForm(true);
-  };
-
   const ctaContentClass = `home_cta-content ${props.ctaBg}`;
   const ctaStyle = {
     padding: props.ctaPadding,
@@ -22,19 +16,15 @@ const CTA = (props) => {
             <h1>{props.ctaHeading}</h1>
           </div>
           <div className="home_cta-btn">
-            <button
-              onClick={handleOpenContactForm}
-              style={{ backgroundColor: props.CtabtnColor }}
-            >
-              <i className="fa-solid fa-envelope fa-beat fa-lg"></i>
-              {props.btnText}
-            </button>
+            <Link to="/contact">
+              <button style={{ backgroundColor: props.CtabtnColor }}>
+                <i className="fa-regular fa-envelope fa-lg fa-beat"></i>{" "}
+                {props.btnText}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      {showContactForm && (
-        <ContactForm onClose={() => setShowContactForm(false)} />
-      )}
     </>
   );
 };
