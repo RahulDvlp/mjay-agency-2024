@@ -65,8 +65,8 @@ const HomePage = () => {
       {/* <Testimonials /> */}
       <Packages />
       <CTA
-        ctaHeading="Don't know where to start? Let us help!"
-        btnText="let's connect!"
+        ctaHeading="ready to scale your business to the digital world?"
+        btnText="get started!"
         ctaBg="cta_yellow_bg"
         ctaPadding="5rem 0"
         CtabtnColor="#fff"

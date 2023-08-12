@@ -8,3 +8,4 @@ export { default as Values } from "./values/Values";
 export { default as AboutHero } from "./aboutHero/AboutHero";
 export { default as Contact } from "./contact/Contact";
 export { default as Packages } from "./packages/Packages";
+export { default as Portfolio } from "./portfolio/Portfolio";

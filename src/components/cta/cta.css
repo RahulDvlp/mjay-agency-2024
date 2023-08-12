@@ -140,6 +140,9 @@
 /* mobile displays - 2 */
 
 @media screen and (max-width: 600px) {
+  .home_cta {
+    height: 300px;
+  }
   .home_cta-content {
     width: 350px;
     height: 240px;

@@ -38,7 +38,23 @@
 .work_cards::-webkit-scrollbar {
   display: none; /* Hide scrollbars on Chrome/Safari */
 }
+.portfolio_btn {
+  margin-top: 2rem;
+}
+.portfolio_btn a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
 
+  color: #000;
+  background: rgba(250, 210, 47, 0.980392) 0%;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 4px;
+
+  font-family: var(--font-family-montserrat);
+}
 /* small desktop displays */
 @media screen and (max-width: 933px) {
   .works {
@@ -54,10 +70,19 @@
   .works .title {
     padding: 0 2rem;
   }
+  .portfolio_btn {
+    margin-top: 1.4rem;
+  }
+  .portfolio_btn a {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .works {
     height: 33rem;
+  }
+  .portfolio_btn a {
+    font-size: 13px;
   }
 }

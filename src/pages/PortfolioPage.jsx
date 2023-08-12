@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { PortfolioHero, Works } from "../containers";
+import { PortfolioHero, Portfolio } from "../containers";
 import { Navbar, CTA, Footer } from "../components";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
@@ -24,7 +24,7 @@ const PortfolioPage = () => {
       </Helmet>
       <Navbar />
       <PortfolioHero />
-      <Works />
+      <Portfolio />
       <CTA
         ctaHeading="LIKE WHAT YOU SEE? LET’S MAKE ONE FOR YOU!"
         btnText="contact us"

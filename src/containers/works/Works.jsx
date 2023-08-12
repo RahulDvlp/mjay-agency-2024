@@ -4,6 +4,7 @@ import { WorkCard } from "../../components";
 import work1 from "../../assets/work1.png";
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
+import { Link } from "react-router-dom";
 import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
@@ -50,7 +51,7 @@ const Works = () => {
       onMouseLeave={handleMouseUp}
     >
       <div className="title">
-        <h1>upcoming works</h1>
+        <h1>Recent works</h1>
         <div className="bar"></div>
       </div>
       <div className="work_cards" ref={scrollRef}>
@@ -86,6 +87,9 @@ const Works = () => {
         <button className="nav-button" onClick={handleScrollRight}>
           <HiOutlineArrowNarrowRight size={30} color="#000" />
         </button>
+      </div>
+      <div className="portfolio_btn">
+        <Link to="/portfolio">view portfolio</Link>
       </div>
     </div>
   );

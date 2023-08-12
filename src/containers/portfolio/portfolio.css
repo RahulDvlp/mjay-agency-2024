@@ -1,0 +1,129 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 3.5rem;
+}
+.portfolio .title {
+  align-self: flex-start;
+}
+.portfolio_gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 4rem;
+
+  gap: 2rem;
+}
+.portfolio_pics img {
+  width: 350px;
+}
+
+.portfolio_gallery .portfolio_pics {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.portfolio_gallery .portfolio_pics:hover {
+  scale: 0.9;
+}
+
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+.model.open svg {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  color: #000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .portfolio_pics img {
+    width: 300px;
+  }
+
+  .portfolio_gallery {
+    gap: 1.5rem;
+  }
+  .portfolio {
+    padding: 4rem 1rem;
+  }
+  .portfolio .title {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    padding: 3rem 1rem;
+  }
+  .portfolio_gallery {
+    margin-top: 3rem;
+  }
+  .portfolio_pics img {
+    width: 350px;
+  }
+  .portfolio_gallery {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .portfolio_gallery {
+    margin-top: 2rem;
+  }
+  .portfolio_pics img {
+    width: 300px;
+  }
+  .portfolio_gallery {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .portfolio_pics img {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .portfolio_pics img {
+    width: 250px;
+  }
+}
