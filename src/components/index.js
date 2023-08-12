@@ -9,3 +9,4 @@ export { default as WorkCard } from "./workCard/WorkCard";
 export { default as ValueCard } from "./valueCard/ValueCard";
 export { default as ContactForm } from "./contactForm/ContactForm";
 export { default as WhatsappBtn } from "./whatsappBtn/WhatsappBtn";
+export { default as PackageCard } from "./packageCard/PackageCard";

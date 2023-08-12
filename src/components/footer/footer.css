@@ -259,7 +259,7 @@
   }
 }
 /* mobile displays 2*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .footer_content {
     gap: 20px 70px;
   }

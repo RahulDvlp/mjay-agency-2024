@@ -1,0 +1,28 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.5rem;
+}
+
+.packages .title {
+  align-self: flex-start;
+}
+
+.packages_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .packages_container {
+    margin-top: 3rem;
+  }
+}

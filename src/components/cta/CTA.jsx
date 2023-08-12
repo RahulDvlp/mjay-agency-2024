@@ -18,7 +18,7 @@ const CTA = (props) => {
           <div className="home_cta-btn">
             <Link to="/contact">
               <button style={{ backgroundColor: props.CtabtnColor }}>
-                <i className="fa-regular fa-envelope fa-lg fa-beat"></i>{" "}
+                {/* <i className="fa-regular fa-envelope fa-lg"></i> */}
                 {props.btnText}
               </button>
             </Link>

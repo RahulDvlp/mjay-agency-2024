@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import { Navbar, Footer, CTA, FAQ } from "../components";
-import { Header, Mission, Services, Testimonials, Works } from "../containers";
+import {
+  Header,
+  Mission,
+  Services,
+  Testimonials,
+  Works,
+  Packages,
+} from "../containers";
 import { Helmet } from "react-helmet";
 import ReactGA from "react-ga";
 
@@ -56,9 +63,10 @@ const HomePage = () => {
       <Services />
       <Works />
       {/* <Testimonials /> */}
+      <Packages />
       <CTA
-        ctaHeading="Let's Collaborate and Bring Your Project to Life."
-        btnText="let's connect"
+        ctaHeading="Don't know where to start? Let us help!"
+        btnText="let's connect!"
         ctaBg="cta_yellow_bg"
         ctaPadding="5rem 0"
         CtabtnColor="#fff"

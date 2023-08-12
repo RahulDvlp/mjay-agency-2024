@@ -56,7 +56,7 @@ const AboutPage = () => {
       <FAQ items={items} />
       <CTA
         ctaHeading="READY TO WORK WITH US?"
-        btnText="say hi"
+        btnText="say hi!"
         ctaBg="cta_white_bg"
         ctaPadding="0"
         CtabtnColor="var(--brand-yellow)"
