@@ -1,0 +1,89 @@
+.process {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-top: 3rem;
+}
+
+.process .title {
+  align-self: flex-start;
+  padding-left: 3.5rem;
+}
+
+.hrScroll {
+  position: relative;
+  height: 300vh;
+  background: #fff;
+}
+
+.purpleBox {
+  position: sticky;
+  display: flex;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  will-change: transform;
+}
+
+.pCards_desktop {
+  display: flex;
+  align-items: center;
+}
+
+.pCards_desktop {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.pCards_desktop {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-will-change: transform;
+  will-change: transform;
+}
+
+.pCards_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .process .title {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hrScroll {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pCards_desktop {
+    display: none;
+  }
+
+  .pCards_mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .pCards_mobile {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  .pCards_mobile {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-will-change: transform;
+    will-change: transform;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pCards_mobile {
+    transform: translate3d(0, 0, 0);
+  }
+}

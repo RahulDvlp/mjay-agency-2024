@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;800;900&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;800;900&family=Open+Sans:wght@300;400&family=Smooch&display=block");
 :root {
   --font-family-bebas-neue: "Bebas Neue", sans-serif;
   --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-smooch: "Smooch", sans-serif;
 
   --brand-yellow: #fad22f;
+  /* --brand-yellow: #ffe604; */
 }

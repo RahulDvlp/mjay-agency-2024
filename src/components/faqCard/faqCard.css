@@ -23,7 +23,7 @@
 
   margin: 20px 0;
 }
-.accordion-container h1 {
+.accordion-container h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -44,16 +44,16 @@
 .content {
   padding: 0 0 10px 0;
   background-color: transparent;
-  color: #555;
+  color: #7b7b7b;
   transition: max-height 0.5s ease;
 }
 
-.content p {
+.content h3 {
   margin: 0;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
 
   letter-spacing: 0.015em;
 }
@@ -71,13 +71,13 @@
 }
 /* tablet displays */
 @media screen and (max-width: 850px) {
-  .accordion-container h1 {
+  .accordion-container h2 {
     font-size: 16px;
     line-height: 24px;
   }
-  .content p {
-    font-size: 12px;
-    line-height: 22px;
+  .content h3 {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .accordion-title {
@@ -87,11 +87,12 @@
 
 /* mobile displays- 1 */
 @media screen and (max-width: 600px) {
-  .accordion-container h1 {
+  .accordion-container h2 {
     font-size: 16px;
   }
-  .content p {
-    line-height: 20px;
+  .content h3 {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .accordion-title {
@@ -100,11 +101,11 @@
 }
 /* mobile displays -2 */
 @media screen and (max-width: 330px) {
-  .accordion-container h1 {
+  .accordion-container h2 {
     font-size: 15px;
   }
-  .content p {
-    /* font-size: 11px; */
-    line-height: 18px;
+  .content h3 {
+    font-size: 13px;
+    line-height: 20px;
   }
 }

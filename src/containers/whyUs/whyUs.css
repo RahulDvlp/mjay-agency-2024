@@ -1,0 +1,29 @@
+.why_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.5rem;
+}
+
+.why_us .title {
+  align-self: flex-start;
+}
+
+.why_us_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 3.5rem;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 875px) {
+  .why_us {
+    padding: 3.5rem 2rem;
+  }
+}

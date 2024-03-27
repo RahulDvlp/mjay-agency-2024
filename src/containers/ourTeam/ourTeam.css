@@ -1,0 +1,42 @@
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3.5rem;
+
+  background: #fafafa;
+}
+
+.ourTeam .title {
+  align-self: flex-start;
+}
+
+.teamCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 2.5rem;
+
+  gap: 150px;
+}
+
+@media screen and (max-width: 1090px) {
+  .teamCards {
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .ourTeam {
+    padding: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .teamCards {
+    gap: 40px;
+  }
+}

@@ -1,21 +1,25 @@
 import React, { useEffect } from "react";
-import { PortfolioHero, Portfolio } from "../containers";
+import { PortfolioHero, Portfolio, Process } from "../containers";
 import { Navbar, CTA, Footer } from "../components";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet";
 
 const PortfolioPage = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "Portfolio Page",
+    });
   });
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Portfolio-Best Website Designers in Tamilnadu</title>
+        <title>Mjay Digital Solutions: Our Works</title>
         <meta
           name="description"
-          content="Quality SEO services, web development in Tamilnadu. Boost online presence with expert digital solutions. Contact us for free consultation!"
+          content="Mjay Digital Solutions is a leading web design and development company in Salem, Tamilnadu. We are happy to showcase our best recent work."
         />
         <link
           rel="canonical"
@@ -25,6 +29,7 @@ const PortfolioPage = () => {
       <Navbar />
       <PortfolioHero />
       <Portfolio />
+      <Process />
       <CTA
         ctaHeading="LIKE WHAT YOU SEE? LET’S MAKE ONE FOR YOU!"
         btnText="contact us"

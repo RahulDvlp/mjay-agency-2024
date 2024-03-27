@@ -19,7 +19,7 @@
   background: #000;
   color: #fff;
 }
-.title h1 {
+.title h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 35px;
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 .mission_content h1 {
-  width: 696px;
+  width: 740px;
 
   font-style: normal;
   font-weight: 900;
@@ -71,11 +71,11 @@
   .mission {
     height: 41.938rem;
   }
-  .title h1 {
+  .title h2 {
     font-size: 28px;
   }
   .mission_content h1 {
-    width: 550px;
+    width: 580px;
     font-size: 50px;
     line-height: 64px;
   }
@@ -87,11 +87,11 @@
   .mission {
     height: 30rem;
   }
-  .title h1 {
+  .title h2 {
     font-size: 25px;
   }
   .mission_content h1 {
-    width: 326px;
+    width: 350px;
     font-size: 30px;
     line-height: 44px;
   }
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 400px) {
   .mission_content h1 {
-    width: 282px;
+    width: 300px;
     font-size: 26px;
     line-height: 44px;
   }
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 350px) {
   .mission_content h1 {
-    width: 261px;
+    width: 280px;
     font-size: 24px;
     line-height: 44px;
   }
@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 300px) {
   .mission_content h1 {
-    width: 240px;
+    width: 255px;
     font-size: 22px;
     line-height: 44px;
   }

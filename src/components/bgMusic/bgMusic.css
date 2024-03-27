@@ -1,0 +1,54 @@
+/* .music-container {
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+}
+
+.music-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.music-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.music-icon:hover {
+  color: #ff0000;
+} */
+
+.bgMusic {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.bgMusic button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  /* background-color: #fad22f; */
+  /* background: rgba(204, 153, 0, 0.4); */
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Small background shadow */
+
+  backdrop-filter: blur(10px);
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  color: #111;
+}
+
+.bgMusic button:focus {
+  outline: none;
+}
+
+.bgMusic button svg {
+  width: 20px;
+  height: 20px;
+}

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./works.css";
 import { WorkCard } from "../../components";
 import work1 from "../../assets/work1.png";
@@ -9,6 +9,7 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
+import AOS from "aos";
 
 const Works = () => {
   const scrollRef = useRef(null);
@@ -41,7 +42,9 @@ const Works = () => {
   const handleScrollRight = () => {
     scrollRef.current.scrollLeft += scrollRef.current.offsetWidth;
   };
-
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 180 });
+  }, []);
   return (
     <div
       className="works"
@@ -50,31 +53,31 @@ const Works = () => {
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
     >
-      <div className="title">
-        <h1>Recent works</h1>
+      <div className="title" data-aos="fade-right">
+        <h2>Recent works</h2>
         <div className="bar"></div>
       </div>
       <div className="work_cards" ref={scrollRef}>
-        <div className="work-wrapper">
+        <div className="work-wrapper" data-aos="fade-left">
           <WorkCard
             workName="sam creations"
-            alt="E-commerce Website Development"
+            alt="best-website-designers-salem-case-study"
             workBg="work_bg_1"
             work={work1}
           />
         </div>
-        <div className="work-wrapper">
+        <div className="work-wrapper" data-aos="fade-left">
           <WorkCard
             workName="dj photo stories"
-            alt="SEO Optimization for Small Businesses"
+            alt="responsive-web-design-services-case-study"
             workBg="work_bg_2"
             work={work2}
           />
         </div>
-        <div className="work-wrapper">
+        <div className="work-wrapper" data-aos="fade-left">
           <WorkCard
             workName="marketing agency"
-            alt="Responsive Website Design"
+            alt="website-design-development-services-tamilnadu-case-study"
             workBg="work_bg_3"
             work={work3}
           />
@@ -88,8 +91,9 @@ const Works = () => {
           <HiOutlineArrowNarrowRight size={30} color="#000" />
         </button>
       </div>
-      <div className="portfolio_btn">
+      <div className="portfolio_btn" data-aos="fade-up">
         <Link to="/portfolio">view portfolio</Link>
+        <i className="fa-solid fa-arrow-right-long"></i>
       </div>
     </div>
   );

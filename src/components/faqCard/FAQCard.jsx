@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import "./faqCard.css"; // Import the CSS file for styling
+import "./faqCard.css";
 
 const FAQCard = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,11 +23,11 @@ const FAQCard = ({ items }) => {
             <span className="accordion-icon">
               {isActive ? <FaMinus /> : <FaPlus />}
             </span>
-            <h1>{item.title}</h1>
+            <h2>{item.title}</h2>
           </div>
           {isActive && (
             <div className={contentClass}>
-              <p>{item.content}</p>
+              <h3>{item.content}</h3>
             </div>
           )}
         </div>

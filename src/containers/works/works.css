@@ -39,21 +39,39 @@
   display: none; /* Hide scrollbars on Chrome/Safari */
 }
 .portfolio_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   margin-top: 2rem;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: rgba(250, 210, 47, 0.980392) 0%;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+.portfolio_btn:hover {
+  gap: 10px;
 }
 .portfolio_btn a {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 15px;
 
   color: #000;
-  background: rgba(250, 210, 47, 0.980392) 0%;
   font-size: 16px;
   font-weight: 600;
 
-  border-radius: 4px;
-
   font-family: var(--font-family-montserrat);
+  transition: all 0.2s ease-in-out;
+}
+.navigation svg {
+  transition: all 0.1s ease-in-out;
+}
+.navigation svg:hover {
+  opacity: 74%;
+  scale: 1.05;
 }
 /* small desktop displays */
 @media screen and (max-width: 933px) {

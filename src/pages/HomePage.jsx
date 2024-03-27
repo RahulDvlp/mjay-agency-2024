@@ -3,44 +3,55 @@ import { Navbar, Footer, CTA, FAQ } from "../components";
 import {
   Header,
   Mission,
-  Services,
+  Services2,
   Testimonials,
   Works,
+  Result,
   Packages,
 } from "../containers";
 import { Helmet } from "react-helmet";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const HomePage = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    // ReactGA.pageview(window.location.pathname);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "Home Page",
+    });
   });
 
   const items = [
     {
-      title: "Do I really need a website for my business? ",
+      title: "What is a website? ",
       content:
-        "Yes, in today's digital era, a website is essential for your business. It establishes credibility, expands your reach, and enables potential customers to find and learn more about your products or services.",
+        "A website serves as a home for your social media and marketing efforts. It's a platform to showcase your brand, establish business credibility, raise brand awareness, and generate leads, making it an essential tool for your online success.",
     },
     {
-      title: "What services do you provide? ",
+      title: "Do I really need a website for my business?",
       content:
-        "We offer a comprehensive range of services including web design, web development, SEO, and branding. Our expert team ensures cohesive and results-driven solutions that elevate your online presence and drive business growth.",
+        "Having a website for your business is crucial, as it delivers powerful social proof, builds credibility, provides potential customers with further information about your goods and services, and increases your visibility, ultimately enhancing your online presence.",
     },
     {
-      title: "What is the cost of your services?",
+      title: "What services do you provide?",
       content:
-        "We offer tailored solutions to meet your business needs. Our pricing reflects the expertise, quality, and value we bring to each project. Rest assured, our focus is on delivering exceptional results that help your business succeed.",
+        "We provide a wide range of services, covering UI/UX design, responsive web design, website development, and SEO services. Our team of experts provides successful and results-driven solutions that improve your online presence and boost your business growth.",
     },
     {
-      title: "What is Branding? ",
+      title: "What is the cost of your services? ",
       content:
-        "Branding encompasses the unique identity and perception of your business. It includes your logo, messaging, and overall visual representation. Effective branding creates a memorable impression and builds trust with your target audience.",
+        "We offer tailored solutions to meet your business needs. Our prices for the website may vary depending on the scope of the project. Our prices reflect the expertise, quality, and value we bring to every project. Our focus is delivering exceptional results for your business's success.",
     },
     {
-      title: "What is SEO and why is it important? ",
+      title: "Do you offer consultations or free assessments? ",
       content:
-        "SEO stands for Search Engine Optimization. It's the process of optimizing your website to rank higher in search engine results. SEO is crucial as it increases visibility, drives organic traffic, and helps potential customers find your website easily.",
+        "Yes, our free consultations offer the benefit of understanding your business, gaining valuable insights, and building a personal relationship.",
+    },
+    {
+      title: "What is SEO, and why is it important? ",
+      content:
+        "SEO stands for Search Engine Optimization. It is the process of optimizing your website so that it ranks better in search engine results. SEO is crucial as it increases visibility, drives organic traffic, and helps potential customers find your website easily.",
     },
   ];
 
@@ -49,19 +60,20 @@ const HomePage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Mjay Digital Solutions-Best Website Designers in Tamilnadu
+          Mjay Digital Solutions: Best website design agency In Tamilnadu
         </title>
         <meta
           name="description"
-          content="Quality SEO services, web development in Tamilnadu. Boost online presence with expert digital solutions. Contact us for free consultation!"
+          content="We are the Best Website Design Company in Salem, Tamilnadu With top-notch web design & development, UI UX design, and search engine optimization."
         />
         <link rel="canonical" href="https://mjaydigitalsolutions.com/" />
       </Helmet>
       <Navbar />
       <Header />
       <Mission />
-      <Services />
+      <Services2 />
       <Works />
+      {/* <Result /> */}
       {/* <Testimonials /> */}
       <Packages />
       <CTA

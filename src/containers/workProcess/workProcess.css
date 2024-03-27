@@ -1,0 +1,100 @@
+/* .workProcess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.5rem;
+
+  background-color: #fafafa;
+}
+.workProcess .title {
+  align-self: flex-start;
+}
+.workProcess_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .workProcess {
+    padding: 4rem 1.9rem;
+  }
+} */
+
+/* new horizontal scroll try - 1 */
+
+/* .workProcess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 60rem;
+  padding: 0 3.5rem;
+
+  padding-left: calc(50% - (400px / 2));
+
+  background-color: yellow;
+}
+.workProcess .title {
+  align-self: flex-start;
+
+  margin-bottom: 4rem;
+}
+.workProcess_cards {
+  width: 650px;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 850px) {
+  .workProcess {
+    padding: 4rem 1.9rem;
+  }
+} */
+
+/* new horizontal scroll try - 2 */
+
+/* .workProcess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 3.5rem;
+
+  background-color: #fafafa;
+}
+.workProcess .title {
+  align-self: flex-start;
+}
+.wpCards {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scrollbar-color: transparent transparent;
+  user-select: none;
+
+  margin-top: 3rem;
+}
+
+.wpCards::-webkit-scrollbar {
+  height: 1px;
+  background-color: transparent;
+} */

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const PackageCard = (props) => {
   return (
     <div className="package_card" style={{ backgroundColor: props.color }}>
-      <img src={props.packageImg} alt="" />
+      <img src={props.packageImg} alt={props.packageAlt} />
       <h2
         style={{
           background: props.packageNameBgColor,
@@ -29,7 +29,7 @@ const PackageCard = (props) => {
                       viewBox="0 0 11 11"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_760_1706)">
+                      <g clipPath="url(#clip0_760_1706)">
                         <path
                           d="M2.89444 4.81478L2.54213 4.46247L2.18858 4.81353L1.59692 5.40103L1.24086 5.75458L1.59567 6.10938L3.92483 8.43855L4.27839 8.7921L4.63194 8.43855L9.63194 3.43855L9.98549 3.085L9.63194 2.73144L9.04444 2.14394L8.69105 1.79056L8.3375 2.14378L4.27855 6.19889L2.89444 4.81478Z"
                           fill="#4028BD"
@@ -66,7 +66,7 @@ const PackageCard = (props) => {
                             viewBox="0 0 11 11"
                             fill="none"
                           >
-                            <g clip-path="url(#clip0_760_1710)">
+                            <g clipPath="url(#clip0_760_1710)">
                               <path
                                 d="M2.89444 4.81478L2.54213 4.46247L2.18858 4.81353L1.59692 5.40103L1.24086 5.75458L1.59567 6.10938L3.92483 8.43855L4.27839 8.7921L4.63194 8.43855L9.63194 3.43855L9.98549 3.085L9.63194 2.73144L9.04444 2.14394L8.69105 1.79056L8.3375 2.14378L4.27855 6.19889L2.89444 4.81478Z"
                                 fill="#73BD28"
@@ -104,7 +104,7 @@ const PackageCard = (props) => {
                     viewBox="0 0 11 11"
                     fill="none"
                   >
-                    <g clip-path="url(#clip0_760_1706)">
+                    <g clipPath="url(#clip0_760_1706)">
                       <path
                         d="M2.89444 4.81478L2.54213 4.46247L2.18858 4.81353L1.59692 5.40103L1.24086 5.75458L1.59567 6.10938L3.92483 8.43855L4.27839 8.7921L4.63194 8.43855L9.63194 3.43855L9.98549 3.085L9.63194 2.73144L9.04444 2.14394L8.69105 1.79056L8.3375 2.14378L4.27855 6.19889L2.89444 4.81478Z"
                         fill="#4028BD"

@@ -15,9 +15,9 @@ const Footer = () => {
               loading="lazy"
             />
             <p>
-              Welcome to MJay Digital Solutions, a professional digital agency
-              adept at providing honest, bespoke digital solutions to businesses
-              of all sizes.
+              Mjay Digital Solutions is a professional website design agency
+              that provides honest, personalized website solutions to businesses
+              of any size.
             </p>
             <div className="socials">
               <a href="https://wa.me/+916374233813">
@@ -36,38 +36,38 @@ const Footer = () => {
           </div>
           <div className="footer_content">
             <div className="footer_services">
-              <h1>
+              <h2>
                 services
                 <div className="horizontal_row_sm"></div>
-              </h1>
-              <h2>Design</h2>
-              <h2>Development</h2>
-              <h2>SEO</h2>
+              </h2>
+              <h3>Design</h3>
+              <h3>Development</h3>
+              <h3>SEO</h3>
             </div>
             <div className="footer_links">
-              <h1>
+              <h2>
                 links
                 <div className="horizontal_row_sm"></div>
-              </h1>
+              </h2>
               <Link to="/">
-                <h2>home</h2>
+                <h3>home</h3>
               </Link>
               <Link to="/portfolio">
-                <h2>work</h2>
+                <h3>work</h3>
               </Link>
               <Link to="/about">
-                <h2>about</h2>
+                <h3>about</h3>
               </Link>
             </div>
             <div className="footer_contact">
-              <h1>
+              <h2>
                 contact
                 <div className="horizontal_row_sm"></div>
-              </h1>
-              <h2>Call Us:</h2>
-              <h2>+91 6374233813</h2>
-              <h2>Mail Us:</h2>
-              <h2>info@mjaydigitalsolutions.com</h2>
+              </h2>
+              <h3>Call Us:</h3>
+              <h3>+91 6374233813</h3>
+              <h3>Mail Us:</h3>
+              <h3>info@mjaydigitalsolutions.com</h3>
             </div>
           </div>
         </div>

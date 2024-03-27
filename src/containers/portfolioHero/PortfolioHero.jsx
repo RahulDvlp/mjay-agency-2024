@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./portfolioHero.css";
 import backgroundImage from "../../assets/portfolio-bg.png";
+import AOS from "aos";
 
 const PortfolioHero = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
+    AOS.init({ duration: 1000, offset: 180 });
     const image = new Image();
     image.onload = () => setIsImageLoaded(true);
     image.src = backgroundImage;
+    image.alt = "ui-ux-design-development-agency-salem";
   }, []);
 
   return (
@@ -21,9 +24,9 @@ const PortfolioHero = () => {
         transition: "opacity 0.5s ease",
       }}
     >
-      <h1>
-        We don't just design websites. We forge online experiences that ignite
-        brands and captivate business <span style={{ color: "#fff" }}>.</span>
+      <h1 data-aos="fade-up">
+        We turn your vision into beautiful website designs. explore a collection
+        of incredible works <span style={{ color: "#fff" }}>.</span>
       </h1>
     </div>
   );

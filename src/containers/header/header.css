@@ -93,7 +93,8 @@
   width: 380px;
   height: 70px;
 
-  background: transparent;
+  background: #fcfcfc;
+  /* background: transparent; */
   border: 2.1px solid #000000;
   font-family: var(--font-family-montserrat);
   cursor: pointer;

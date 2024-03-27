@@ -1,0 +1,142 @@
+.processCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 600px;
+  min-height: 100px;
+
+  padding: 50px;
+  gap: 20px;
+
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 5px 32px 0px rgba(109, 70, 189, 0.08);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.processCard img {
+  width: 75px;
+  height: 75px;
+}
+
+.processCard:hover {
+  scale: 1.05;
+  margin: 0 15px;
+  box-shadow: 10px 10px 60px #dcdcdc, -20px -20px 60px #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.processCard ::selection {
+  background: #000;
+  color: #fff;
+}
+
+.processCard h2 {
+  color: #444;
+  font-family: var(--font-family-montserrat);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+.processCard p {
+  color: #7b7b7b;
+  font-family: var(--font-family-montserrat);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1050px) {
+  .processCard img {
+    width: 65px;
+    height: 65px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .processCard img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .processCard {
+    width: 500px;
+
+    gap: 18px;
+
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .processCard img {
+    width: 60px;
+    height: 65px;
+  }
+
+  .processCard p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .processCard img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .processCard {
+    width: 320px;
+
+    gap: 10px;
+
+    padding: 35px;
+
+    border-radius: 6px;
+  }
+
+  .processCard h2 {
+    font-size: 19px;
+  }
+  .processCard p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .processCard img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .processCard {
+    width: 280px;
+
+    gap: 8px;
+
+    padding: 35px;
+  }
+
+  .processCard h2 {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .processCard p {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .processCard {
+    width: 260px;
+
+    padding: 30px;
+  }
+
+  .processCard h2 {
+    font-size: 17px;
+  }
+  .processCard p {
+    line-height: 20px;
+  }
+}

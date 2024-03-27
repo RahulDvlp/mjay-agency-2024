@@ -1,35 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./services.css";
 import { ServiceCard } from "../../components";
-import design from "../../assets/design.svg";
-import development from "../../assets/development.svg";
-import ecommerce from "../../assets/ecommerce.svg";
+import design from "../../assets/ui-ux.png";
+import development from "../../assets/development.png";
+import seo from "../../assets/seo.png";
+import AOS from "aos";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 180 });
+  }, []);
   return (
     <div className="services">
-      <div className="title">
+      <div className="title" data-aos="fade-right">
         <h1>Services</h1>
         <div className="bar"></div>
       </div>
-      <div className="services_cards">
+      <div className="services_cards" data-aos="fade-up">
         <ServiceCard
           serviceImg={design}
-          serviceTitle="Design"
+          serviceTitle="UI/UX Design"
           alt="Best Website Development Company in Tamilnadu"
-          serviceDescription="Intuitive and visually appealing user interface & Branding design that enhances user experience and drive conversions."
+          serviceDescription="Crafting smooth digital experiences with the best UI/UX design service by expert designers. Improve your user experience right now!"
         />
         <ServiceCard
           serviceImg={development}
-          serviceTitle="Development"
+          serviceTitle="Web Development"
           alt="Effective Social Media Marketing Strategies"
-          serviceDescription="We forge customized websites with seamless functionality, responsive design, and user-friendly interfaces."
+          serviceDescription="It's not only about designing. It's about developing responsive, easy-to-navigate, and fast websites. Discover our web development services!"
         />
         <ServiceCard
-          serviceImg={ecommerce}
-          serviceTitle="Ecommerce"
+          serviceImg={seo}
+          serviceTitle="SEO"
           alt="Targeted Online Advertising"
-          serviceDescription="Scale your business to online with our tailored ecommerce solution. Focused on sales and conversion"
+          serviceDescription="Dominate search rankings and increase organic traffic with our best SEO services, as the trusted SEO company in Salem, India. We boost your visibility."
         />
       </div>
     </div>

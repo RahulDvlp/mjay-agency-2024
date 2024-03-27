@@ -4,8 +4,8 @@ import "./valueCard.css";
 const ValueCard = (props) => {
   return (
     <div className="value_card">
-      <img src={props.valueImg} alt="" loading="lazy" />
-      <h1>{props.value}</h1>
+      <img src={props.valueImg} alt={props.alt} loading="lazy" />
+      <h2>{props.value}</h2>
     </div>
   );
 };

@@ -1,40 +1,48 @@
 import React, { useEffect } from "react";
-import { AboutHero, Values } from "../containers";
+import { AboutHero, Values, OurTeam, WhyUs } from "../containers";
 import { Navbar, CTA, Footer, FAQ } from "../components";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "About Page",
+    });
   });
 
   const items = [
     {
-      title: "What makes your agency different from others in the industry? ",
+      title: "What makes your agency different from others in the industry?",
       content:
-        "Our agency stands out for its creative approach, technical expertise, and a deep focus on client success. We prioritize your unique goals, delivering customized solutions that drive exceptional results and exceed expectations.",
+        "Our agency differentiates itself with a creative approach, technical expertise, and a strong focus on our clients' success. We emphasize your unique goals and provide responsive design solutions as a leading website development company. Our tailored approach guarantees outstanding outcomes that exceed your expectations.",
     },
     {
-      title: "Can you explain your agency's design and development process? ",
+      title: "Can you explain your agency's design and development process?",
       content:
-        "Our design and development process is a collaborative journey. We start with in-depth discussions to understand your vision and requirements. Then, our experts employ best practices, iterative design, and rigorous testing to deliver a website that exceeds your expectations.",
+        "Our design and development process is a collaborative journey. We start with in-depth discussions to understand your vision and requirements and prioritize the user experience. Our experts use constant design processes and rigorous testing to ensure your website exceeds expectations.",
     },
     {
-      title:
-        "How do you ensure the security and confidentiality of client information?",
+      title: "Do you offer ongoing support after the website is launched?",
       content:
-        "We prioritize the security and confidentiality of client information. We implement robust security measures, including data encryption, secure servers, and strict access controls, to safeguard your sensitive data at all times.",
+        "Absolutely! We provide ongoing support to optimize your website's performance. From regular maintenance and updates to security enhancements and technical troubleshooting, our goal is to ensure your online presence remains strong.",
     },
     {
-      title: "Do you offer ongoing support after the website is launched? ",
+      title: "Can you assist with website hosting and domain registration?",
       content:
-        "Absolutely! We provide ongoing support to ensure your website continues to perform optimally. From regular maintenance, updates, and security enhancements to addressing any technical issues, we're here to support your online presence every step of the way.",
+        "Yes, we offer complete assistance with website hosting and domain registration. We'll guide you through the process and make sure your website works smoothly and performs at its best.",
     },
     {
-      title: "Can you assist with website hosting and domain registration? ",
+      title: "What industries do you typically work with?",
       content:
-        "Yes, we offer comprehensive assistance with website hosting and domain registration. We guide you through the process, ensuring seamless setup and optimal performance for your website.",
+        "We primarily work with B2C businesses across various industries in India, offering our expertise in the best website design and development services as well as extensive SEO services.",
+    },
+    {
+      title: "Are your services customizable to fit my specific needs?",
+      content:
+        "Yes, our services are fully customizable to meet your specific needs. We tailor our solutions to ensure they are interactive, responsive, and SEO-friendly, providing you with a personalized experience that aligns perfectly with your requirements.",
     },
   ];
 
@@ -43,17 +51,18 @@ const AboutPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
 
-        <title>About-Best Website Designers in Tamilnadu</title>
+        <title>Mjay Digital Solutions: about us</title>
         <meta
           name="description"
-          content="Quality SEO services, web development in Tamilnadu. Boost online presence with expert digital solutions. Contact us for free consultation!"
+          content="Welcome to Mjay Digital Solutions, Our enthusiastic team is dedicated to creating innovative digital solutions that are personalized to meet your specific needs. Check out our services, mission, and Portfolio here"
         />
         <link rel="canonical" href="https://mjaydigitalsolutions.com/about" />
       </Helmet>
       <Navbar />
       <AboutHero />
       <Values />
-      <FAQ items={items} />
+      <OurTeam />
+      <WhyUs />
       <CTA
         ctaHeading="READY TO WORK WITH US?"
         btnText="say hi!"
@@ -61,6 +70,7 @@ const AboutPage = () => {
         ctaPadding="0"
         CtabtnColor="var(--brand-yellow)"
       />
+      <FAQ items={items} />
       <Footer />
     </div>
   );

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { TailSpin } from "react-loader-spinner";
 import "./workCard.css";
+import { useNavigate } from "react-router-dom";
 
 const WorkCard = (props) => {
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,6 +16,10 @@ const WorkCard = (props) => {
   }, []);
 
   const workContentClass = `workImg ${props.workBg}`;
+
+  const handleClick = () => {
+    navigate("/portfolio");
+  };
 
   return (
     <div className="workCard">
@@ -26,13 +32,12 @@ const WorkCard = (props) => {
             alt={props.alt}
             loading="lazy"
             onLoad={() => setIsLoading(false)}
+            onClick={handleClick}
           />
         )}
       </div>
       <div className="workName">
-        {/* <a href="https://samcreations-co-in.onrender.com/"> */}
-        <h1>{props.workName}</h1>
-        {/* </a> */}
+        <h2>{props.workName}</h2>
       </div>
     </div>
   );

@@ -1,0 +1,33 @@
+.services2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 3.5rem;
+
+  background: #fafafa;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services2 .title {
+  align-self: flex-start;
+}
+
+.services_cards2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 3.5rem;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 875px) {
+  .services2 {
+    padding: 3.5rem 2rem;
+  }
+}

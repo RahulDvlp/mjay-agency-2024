@@ -1,0 +1,136 @@
+.serviceCard2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 600px;
+  min-height: 100px;
+
+  padding: 50px;
+  gap: 20px;
+
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 5px 32px 0px rgba(109, 70, 189, 0.08);
+
+  font-family: var(--font-family-montserrat);
+  transition: all 0.2s ease-in-out;
+}
+
+.serviceCard2 ::selection {
+  background: #000;
+  color: #fff;
+}
+
+.serviceCard2 img {
+  width: 75px;
+  height: 75px;
+}
+
+.serviceCard2 h2 {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.serviceCard2 p {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.serviceCard2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333333;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: all ease-in-out 0.2s;
+}
+
+.serviceCard2 a:hover {
+  gap: 6px;
+}
+
+@media screen and (max-width: 650px) {
+  .serviceCard2 {
+    width: 500px;
+    min-height: 80px;
+
+    border-radius: 8px;
+  }
+  .serviceCard2 img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .serviceCard2 {
+    width: 320px;
+
+    gap: 10px;
+
+    padding: 35px;
+
+    border-radius: 6px;
+  }
+
+  .serviceCard2 h2 {
+    font-size: 19px;
+  }
+  .serviceCard2 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .serviceCard2 a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .serviceCard2 img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .serviceCard2 {
+    width: 280px;
+
+    gap: 8px;
+
+    padding: 35px;
+  }
+
+  .serviceCard2 h2 {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .serviceCard2 p {
+    line-height: 24px;
+  }
+  .serviceCard2 a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .serviceCard2 {
+    width: 260px;
+
+    padding: 30px;
+  }
+
+  .serviceCard2 h2 {
+    font-size: 17px;
+  }
+  .serviceCard2 p {
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,137 @@
+.whyUsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 600px;
+  min-height: 100px;
+
+  padding: 50px;
+  gap: 20px;
+
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 5px 32px 0px rgba(109, 70, 189, 0.08);
+  font-family: var(--font-family-montserrat);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.whyUsCard img {
+  width: 75px;
+  height: 75px;
+}
+
+.whyUsCard ::selection {
+  background: #000;
+  color: #fff;
+}
+
+.whyUsCard h2 {
+  color: #444;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+.whyUsCard p {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1050px) {
+  .whyUsCard img {
+    width: 65px;
+    height: 65px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .whyUsCard img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .whyUsCard {
+    width: 500px;
+
+    gap: 18px;
+
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .whyUsCard img {
+    width: 60px;
+    height: 65px;
+  }
+
+  .whyUsCard p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .whyUsCard img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .whyUsCard {
+    width: 320px;
+
+    gap: 10px;
+
+    padding: 35px;
+
+    border-radius: 6px;
+  }
+
+  .whyUsCard h2 {
+    font-size: 19px;
+  }
+  .whyUsCard p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .whyUsCard img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .whyUsCard {
+    width: 280px;
+
+    gap: 8px;
+
+    padding: 35px;
+  }
+
+  .whyUsCard h2 {
+    font-size: 18px;
+    margin-top: 6px;
+
+    line-height: 26px;
+  }
+  .whyUsCard p {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .whyUsCard {
+    width: 260px;
+
+    padding: 30px;
+  }
+
+  .whyUsCard h2 {
+    font-size: 17px;
+  }
+  .whyUsCard p {
+    line-height: 20px;
+  }
+}

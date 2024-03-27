@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /private/
+Allow: /public/
+Sitemap: https://mjaydigitalsolutions.com/sitemap.xml

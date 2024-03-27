@@ -1,15 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import backgroundImage from "../../assets/header-bg.png";
+import AOS from "aos";
+import { motion } from "framer-motion";
+import TagManager from "react-gtm-module"; // Import TagManager
 
 const Header = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
+    AOS.init({ duration: 1000, offset: 180 });
+
     const image = new Image();
     image.onload = () => setIsImageLoaded(true);
     image.src = backgroundImage;
+    image.alt = "best-website-design-company";
   }, []);
+
+  const handleConsultationClick = () => {
+    // Track the click event when the "Free Consultation" button is clicked
+    TagManager.dataLayer({
+      dataLayer: {
+        event: "FreeConsultation_Click",
+      },
+    });
+  };
 
   return (
     <div
@@ -21,19 +36,38 @@ const Header = () => {
         transition: "opacity 0.5s ease",
       }}
     >
-      <div className="header__content">
+      <motion.div
+        className="header__content"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          duration: 1,
+        }}
+      >
         <h1>BREAK THROUGH LIMITATIONS!</h1>
         <h1>
           GROW YOUR BUSINESS <span>DIGITALLY</span>
         </h1>
         <p>
-          We help B2C businesses scale online with top-notch web design,
-          e-commerce solutions, and social media optimization. Partner with a
-          reliable digital agency in India for your digital success.
+          We as the best website design agency in Salem, Tamil Nadu. We
+          specialize in helping B2C businesses succeed online with our
+          responsive web design services, top-notch UI/UX design and
+          development, and search engine optimization services, making us the
+          best website design company in India.
         </p>
-        <a href="tel:+916374233813" target="_blank" rel="noreferrer">
+        <a
+          href="https://calendly.com/manikandan13103/consultation"
+          target="_blank"
+          rel="noreferrer"
+          data-aos="fade-right"
+          onClick={handleConsultationClick} // Add onClick handler to track the click event
+        >
           <button>
-            <i className="fa-solid fa-phone-volume fa-shake fa-lg"></i>
+            <i className="fa-solid fa-calendar-days fa-lg"></i>
             Free Consultation
           </button>
         </a>
@@ -43,7 +77,7 @@ const Header = () => {
           <div className="arrow"></div>
           <div className="arrow"></div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  /* background-color: #eee; */
   height: 500px;
 }
 .home_cta ::selection {
