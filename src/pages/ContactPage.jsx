@@ -17,12 +17,12 @@ const ContactPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
 
-        <title>Contact Us-Best Website Designers in Tamilnadu</title>
+        <title>Contact Us- Website Designers in Tamilnadu</title>
         <meta
           name="description"
           content="Quality SEO services, web development in Tamilnadu. Boost online presence with expert digital solutions. Contact us for free consultation!"
         />
-        <link rel="canonical" href="https://mjaydigitalsolutions.com/contact" />
+        <link rel="canonical" href="https://loftydesignstudio.com/contact" />
       </Helmet>
       <Navbar />
       <Contact />

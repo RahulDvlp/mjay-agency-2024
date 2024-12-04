@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./serviceCard2.css";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import AOS from "aos";
 
 const ServiceCard2 = (props) => {

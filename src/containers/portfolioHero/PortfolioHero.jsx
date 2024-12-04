@@ -3,7 +3,7 @@ import "./portfolioHero.css";
 import backgroundImage from "../../assets/portfolio-bg.png";
 import AOS from "aos";
 
-const PortfolioHero = () => {
+const PortfolioHero = (props) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -25,8 +25,7 @@ const PortfolioHero = () => {
       }}
     >
       <h1 data-aos="fade-up">
-        We turn your vision into beautiful website designs. explore a collection
-        of incredible works <span style={{ color: "#fff" }}>.</span>
+        {props.PortBlogHero} <span style={{ color: "#fff" }}>.</span>
       </h1>
     </div>
   );

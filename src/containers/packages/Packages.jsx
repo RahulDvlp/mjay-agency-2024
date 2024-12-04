@@ -3,7 +3,7 @@ import "./packages.css";
 import { PackageCard } from "../../components";
 import packageImg1 from "../../assets/package1.svg";
 import packageImg2 from "../../assets/package2.svg";
-import packageImg3 from "../../assets/package3.svg";
+// import packageImg3 from "../../assets/package3.svg";
 import AOS from "aos";
 
 const Packages = () => {
@@ -13,12 +13,12 @@ const Packages = () => {
   return (
     <div className="packages">
       <div className="title" data-aos="fade-right">
-        <h2>Pricing</h2>
+        <h2>Packages</h2>
         <div className="bar"></div>
       </div>
       <div className="packages_container">
         <div className="package_wrapper" data-aos="fade-up">
-          <PackageCard
+          {/* <PackageCard
             color="#fff"
             packageImg={packageImg3}
             packageAlt="custom-websites-salem-starter-package"
@@ -53,7 +53,7 @@ const Packages = () => {
             origPrice="₹90,000"
             btnBackground="#ffe500"
             btnTxtColor="#000"
-          />
+          /> */}
         </div>
         <div className="package_wrapper" data-aos="fade-up">
           <PackageCard
@@ -68,30 +68,31 @@ const Packages = () => {
               "Site Development",
               "Tailored Site Structure and Components",
               "On-page SEO",
-              "Keyword Research",
+              "Off-page SEO",
               "SEO Optimized Content for Google Ranking",
+              "Monthly SEO Report",
               "Google analytics setup",
               "Social media links",
               "Social media button integration",
               "Call button integration",
               "Contact form with CRM integration",
-              [
-                "Full suite social media setup",
-                "Setting up Facebook, Instagram, LinkedIn, Whatsapp Business profiles",
-                "Branding the profiles with client's logo and cover images",
-                "Providing guidelines for posting content and strategy",
-                "Ensuring consistent branding across all social media platforms",
-                "Connecting social media profiles to the website for easy access",
-              ],
-              "Banner design",
-              "Google business account setup",
-              "Social media profile optimization",
+              // [
+              //   "Full suite social media setup",
+              //   "Setting up Facebook, Instagram, LinkedIn, Whatsapp Business profiles",
+              //   "Branding the profiles with client's logo and cover images",
+              //   "Providing guidelines for posting content and strategy",
+              //   "Ensuring consistent branding across all social media platforms",
+              //   "Connecting social media profiles to the website for easy access",
+              // ],
+              // "Banner design",
+              // "Google business account setup",
+              // "Social media profile optimization",
               "Free Hosting",
               "Domain integration",
               "Free customer support for 3 months",
             ]}
-            offPrice="₹49,999"
-            origPrice="₹60,000"
+            offPrice="₹19,999"
+            origPrice="₹35,000"
             btnBackground="#4218DA"
             btnTxtColor="#fff"
           />
@@ -112,16 +113,16 @@ const Packages = () => {
               "Google Analytics Setup",
               "Social Media Links",
               "Contact Form",
-              [
-                "Social Media Profile Setup",
-                "Setting Up Facebook, Instagram, LinkedIn, Whatsapp Business profiles",
-              ],
+              // [
+              //   "Social Media Profile Setup",
+              //   "Setting Up Facebook, Instagram, LinkedIn, Whatsapp Business profiles",
+              // ],
               "Free Hosting",
               "Domain Integration",
               "Free Customer Support For 1 Month",
             ]}
-            offPrice="₹24,999"
-            origPrice="₹40,000"
+            offPrice="₹11,999"
+            origPrice="₹20,000"
             btnBackground="#1EA2D1"
             btnTxtColor="#fff"
           />

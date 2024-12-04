@@ -1,0 +1,84 @@
+.blogHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 400px;
+
+  padding: 0 3.5rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  scroll-behavior: smooth;
+
+  font-family: var(--font-family-bebas-neue);
+}
+.blogHero ::selection {
+  background: #000;
+  color: var(--brand-yellow);
+}
+.blogHero h1 {
+  width: 863px;
+
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+/* small desktop displays */
+@media screen and (max-width: 1000px) {
+  .blogHero h1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+  }
+}
+/* tablet displays */
+@media screen and (max-width: 720px) {
+  .blogHero h1 {
+    font-size: 44px;
+  }
+}
+/* mobile displays 1 */
+@media screen and (max-width: 600px) {
+  .blogHero {
+    height: 671px;
+  }
+  .blogHero {
+    padding: 0 2.5rem;
+  }
+  .blogHero h1 {
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+  }
+}
+/* mobile displays 2 */
+@media screen and (max-width: 370px) {
+  .blogHero h1 {
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+  }
+}
+/* mobile displays 3 */
+@media screen and (max-width: 320px) {
+  .blogHero {
+    padding: 0 1.5rem;
+
+    height: 670px;
+  }
+  .blogHero h1 {
+    width: 210px;
+
+    font-size: 34px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+  }
+}

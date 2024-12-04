@@ -9,13 +9,12 @@ const AboutHero = () => {
   return (
     <div className="about_hero">
       <h1 data-aos="fade-up">welcome to</h1>
-      <h1 data-aos="fade-right">mjay digital solutions</h1>
+      <h1 data-aos="fade-right">lofty design studio</h1>
       <p data-aos="fade-up">
-        At Mjay Digital Solutions, we are dedicated to helping you succeed
-        online. We're on a mission to let everyone access technology to grow
-        their business. With our responsive web design, creative UI/UX design,
-        and professional SEO services, we're here to make your digital dreams a
-        reality. Let's work together to take your business to the top.
+        At Lofty Design Studio, we're committed to helping you thrive online.
+        Our mission is to elevate your business with our UI/UX design, brand
+        identity design, web development, and expert SEO services. Let’s turn
+        your vision into reality and take your business to new heights together.
       </p>
     </div>
   );

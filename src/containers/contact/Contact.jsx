@@ -27,7 +27,7 @@ const Contact = () => {
               <i className="fa-solid fa-earth-asia"></i> Work Inquiries
             </h3>
             <p>+91 6374233813</p>
-            <p>info@mjaydigitalsolutions.com</p>
+            <p>info@loftydesignstudio.com</p>
           </div>
           <div className="info">
             <h3>

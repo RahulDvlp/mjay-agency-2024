@@ -4,9 +4,9 @@ import {
   Header,
   Mission,
   Services2,
-  Testimonials,
+  // Testimonials,
   Works,
-  Result,
+  // Result,
   Packages,
 } from "../containers";
 import { Helmet } from "react-helmet";
@@ -36,7 +36,7 @@ const HomePage = () => {
     {
       title: "What services do you provide?",
       content:
-        "We provide a wide range of services, covering UI/UX design, responsive web design, website development, and SEO services. Our team of experts provides successful and results-driven solutions that improve your online presence and boost your business growth.",
+        "We provide a wide range of services, covering UI/UX design, website development, brand identity design, and SEO services. Our team of experts provides successful and results-driven solutions that improve your online presence and boost your business growth.",
     },
     {
       title: "What is the cost of your services? ",
@@ -60,13 +60,13 @@ const HomePage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Mjay Digital Solutions: Best website design agency In Tamilnadu
+          Lofty Design Studio: Best website design agency In Tamilnadu
         </title>
         <meta
           name="description"
           content="We are the Best Website Design Company in Salem, Tamilnadu With top-notch web design & development, UI UX design, and search engine optimization."
         />
-        <link rel="canonical" href="https://mjaydigitalsolutions.com/" />
+        <link rel="canonical" href="https://loftydesignstudio.com/" />
       </Helmet>
       <Navbar />
       <Header />

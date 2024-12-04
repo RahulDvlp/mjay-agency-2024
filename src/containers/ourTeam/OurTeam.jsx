@@ -26,7 +26,7 @@ const OurTeam = () => {
           teamImg={Abu}
           teamAlt="best-website-seo-specialist"
           teamName="Abu"
-          teamRole="SEO Specialist"
+          teamRole="SEO Executive"
         />
       </div>
     </div>

@@ -44,12 +44,21 @@ const Navbar = () => {
     setMenuOpened(!menuOpened);
   };
 
+  // Close the menu on link click
+  const closeMenuOnClick = () => {
+    setActive("nav_menu");
+    setToggleIcon("nav_toggler");
+    setMenuOpened(false);
+  };
+
   return (
     <>
       <div className={navColor ? "_navbar bg" : "_navbar"}>
         <div className="mjay_logo">
           <a href="/">
             <img
+              // style={{ width: "120px", height: "auto" }}
+              className="logo"
               src={logo}
               alt="website-design-development-agency"
               loading="lazy"
@@ -59,15 +68,21 @@ const Navbar = () => {
         <div className="nav_menu-bg">
           <div className={active}>
             <p>
-              <Link to="/">HOME</Link>
+              <Link onClick={closeMenuOnClick} to="/">
+                HOME
+              </Link>
             </p>
             <p>
-              <Link to="/portfolio">WORK</Link>
+              <Link onClick={closeMenuOnClick} to="/portfolio">
+                WORK
+              </Link>
             </p>
             <p>
-              <Link to="/about">ABOUT</Link>
+              <Link onClick={closeMenuOnClick} to="/about">
+                ABOUT
+              </Link>
             </p>
-            <Link to="/contact">
+            <Link onClick={closeMenuOnClick} to="/contact">
               <button>Let's Talk</button>
             </Link>
           </div>

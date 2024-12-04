@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
 import { WhatsappBtn, BgMusic } from "./components";
 import ErrorPage from "./pages/ErrorPage";
-import loaderLogo from "./assets/logo.png";
+import loaderLogo from "./assets/logo.svg";
 import { motion } from "framer-motion";
 import TagManager from "react-gtm-module";
 
@@ -12,6 +12,8 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const BlogPage = lazy(() => import("./pages/BlogPage"));
+const BlogDetailsPage = lazy(() => import("./pages/BlogDetailsPage"));
 
 // const TRACKING_ID = "UA-274093549-1"; old ga
 const TRACKING_ID = "G-5T8JFYDFPC";
@@ -79,6 +81,8 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blogs" element={<BlogPage />} />{" "}
+          <Route path="/blogs/:id" element={<BlogDetailsPage />} />{" "}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>

@@ -53,7 +53,8 @@
 }
 
 .footer_logo img {
-  width: 200px;
+  width: 150px;
+  height: auto;
 }
 .footer_logo p {
   width: 260px;
@@ -201,7 +202,8 @@
   }
 
   .footer_logo img {
-    width: 150px;
+    width: 130px;
+    height: auto;
   }
   .footer_logo p {
     font-size: 14px;

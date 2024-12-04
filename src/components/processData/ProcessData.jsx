@@ -55,7 +55,7 @@ const ProcessData = () => {
         proccessImg={review}
         alt="ui-ux-design-development-services-review"
         process="Review"
-        processDesc="At Mjay Digital Solutions, we carefully review every aspect of your website design, exposing it to rigorous testing to ensure an impressive user experience. As a result, users are delighted, and the website exceeds expectations."
+        processDesc="At Lofty Design Studio, we carefully review every aspect of your website design, exposing it to rigorous testing to ensure an impressive user experience. As a result, users are delighted, and the website exceeds expectations."
       />
       <ProcessSeperator />
       <ProcessCard
@@ -69,7 +69,7 @@ const ProcessData = () => {
         proccessImg={support}
         alt="mobile-friendly-website-design-ongoing-support"
         process="Ongoing Support"
-        processDesc="At Mjay Digital Solutions, our commitment doesn't stop at launch. We provide continuous support to keep your website performing at its best. We assist you at every stage, from maintenance to technical assistance. This makes us the leading website design company in Salem, India."
+        processDesc="At Lofty Design Studio, our commitment doesn't stop at launch. We provide continuous support to keep your website performing at its best. We assist you at every stage, from maintenance to technical assistance. This makes us the leading design studio in Salem, India."
       />
     </>
   );

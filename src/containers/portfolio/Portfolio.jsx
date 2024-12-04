@@ -23,8 +23,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className={model ? "model open" : "model"}>
-        <img src={tempImage} alt="" loading="lazy" />
         <RiCloseLine onClick={() => setModel(false)} size={50} />
+        <img src={tempImage} alt="" loading="lazy" />
       </div>
       <div className="title" data-aos="fade-right">
         <h2>Portfolio</h2>

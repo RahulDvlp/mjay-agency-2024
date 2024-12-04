@@ -16,18 +16,18 @@ const PortfolioPage = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Mjay Digital Solutions: Our Works</title>
+        <title>Lofty Design Studio: Our Works</title>
         <meta
           name="description"
           content="Mjay Digital Solutions is a leading web design and development company in Salem, Tamilnadu. We are happy to showcase our best recent work."
         />
-        <link
-          rel="canonical"
-          href="https://mjaydigitalsolutions.com/portfolio"
-        />
+        <link rel="canonical" href="https://loftydesignstudio.com/portfolio" />
       </Helmet>
       <Navbar />
-      <PortfolioHero />
+      <PortfolioHero
+        PortBlogHero="We turn your vision into beautiful website designs. explore a collection
+        of incredible works"
+      />
       <Portfolio />
       <Process />
       <CTA

@@ -15,3 +15,6 @@ export { default as Services2 } from "./services2/Services2";
 export { default as OurTeam } from "./ourTeam/OurTeam";
 export { default as WhyUs } from "./whyUs/WhyUs";
 export { default as Process } from "./process/Process";
+export { default as Blog } from "./blog/Blog";
+export { default as BlogHero } from "./blogHero/BlogHero";
+export { default as BlogDetails } from "./blogDetails/BlogDetails";

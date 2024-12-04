@@ -1,0 +1,88 @@
+.blog_details {
+  max-width: 800px;
+  margin: 8rem auto 2rem;
+  padding: 1rem;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: #333; /* Adjust text color */
+}
+
+.blog_details img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.blog_details h1 {
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.blog_details p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* blogDetails.css */
+
+.blog_cover_image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.blog_details h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #224846; /* Your 'royal dark green' */
+}
+
+.blog_details p {
+  font-size: 1rem;
+  line-height: 1.8; /* Increase line spacing */
+  margin-bottom: 1.5em; /* Space between paragraphs */
+}
+
+.blog_details h2,
+.blog_details h3,
+.blog_details h4 {
+  margin-top: 2em; /* Space above headings */
+  margin-bottom: 1em; /* Space below headings */
+  line-height: 1.4; /* Heading line spacing */
+  color: #224846;
+}
+
+.blog_details a {
+  color: #ddbc5b; /* Gold color for links */
+  text-decoration: none;
+}
+
+.blog_details a:hover {
+  text-decoration: underline;
+  color: #a98c3f; /* Slightly darker gold on hover */
+}
+
+.blog_details small {
+  display: block;
+  margin-top: 2em;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog_details ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.blog_details ol {
+  list-style-type: decimal;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.blog_details li {
+  margin: 5px 0;
+  line-height: 1.6;
+}

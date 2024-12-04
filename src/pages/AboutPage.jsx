@@ -15,12 +15,13 @@ const AboutPage = () => {
 
   const items = [
     {
-      title: "What makes your agency different from others in the industry?",
+      title:
+        "What makes your design studio different from others in the industry?",
       content:
-        "Our agency differentiates itself with a creative approach, technical expertise, and a strong focus on our clients' success. We emphasize your unique goals and provide responsive design solutions as a leading website development company. Our tailored approach guarantees outstanding outcomes that exceed your expectations.",
+        "Our Studio differentiates itself with a creative approach, technical expertise, and a strong focus on our clients' success. We emphasize your unique goals and provide responsive design solutions as a leading website design studio. Our tailored approach guarantees outstanding outcomes that exceed your expectations.",
     },
     {
-      title: "Can you explain your agency's design and development process?",
+      title: "Can you explain your studio's design and development process?",
       content:
         "Our design and development process is a collaborative journey. We start with in-depth discussions to understand your vision and requirements and prioritize the user experience. Our experts use constant design processes and rigorous testing to ensure your website exceeds expectations.",
     },
@@ -51,12 +52,12 @@ const AboutPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
 
-        <title>Mjay Digital Solutions: about us</title>
+        <title>Lofty Design Studio: about us</title>
         <meta
           name="description"
           content="Welcome to Mjay Digital Solutions, Our enthusiastic team is dedicated to creating innovative digital solutions that are personalized to meet your specific needs. Check out our services, mission, and Portfolio here"
         />
-        <link rel="canonical" href="https://mjaydigitalsolutions.com/about" />
+        <link rel="canonical" href="https://loftydesignstudio.com/.com/about" />
       </Helmet>
       <Navbar />
       <AboutHero />

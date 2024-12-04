@@ -29,9 +29,10 @@
   justify-content: center;
 }
 .mjay_logo img {
-  width: 130px;
-  height: 55.47px;
+  width: 140px;
+  height: auto;
 }
+
 ._navbar a {
   text-decoration: none;
   color: inherit;
@@ -101,7 +102,10 @@
     flex-direction: column;
     align-items: flex-end;
   }
-
+  .mjay_logo img {
+    width: 130px;
+    height: auto;
+  }
   .nav_menu {
     position: fixed;
     flex-direction: column;
@@ -155,5 +159,9 @@
 @media screen and (max-width: 320px) {
   ._navbar {
     height: 4.5rem;
+  }
+  .mjay_logo img {
+    width: 90px;
+    height: auto;
   }
 }

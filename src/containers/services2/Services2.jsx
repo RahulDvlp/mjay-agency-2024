@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./services2.css";
 import { ServiceCard2 } from "../../components";
 import design from "../../assets/ui-ux.png";
+import brandDes from "../../assets/brand-identity-design.png";
 import development from "../../assets/development.png";
 import seo from "../../assets/seo.png";
 import AOS from "aos";
@@ -22,6 +23,13 @@ const Services2 = () => {
           alt=" ui-ux-design-services-agency"
           service="UI/UX Design"
           serviceDesc="Crafting smooth digital experiences with the best UI/UX design service by expert designers. Improve your user experience right now!"
+          servicesLink="#"
+        />
+        <ServiceCard2
+          serviceImg={brandDes}
+          alt=" brand-design-services-agency"
+          service="Brand Identity Design"
+          serviceDesc="Build a memorable brand with our Brand Identity Design Services. Our expert team crafts brand identities that resonate with your audience. Elevate your brand’s presence now!"
           servicesLink="#"
         />
         <ServiceCard2

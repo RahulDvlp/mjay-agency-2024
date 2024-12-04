@@ -65,15 +65,28 @@
 }
 .model.open svg {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 2rem;
-  height: 2rem;
+  top: 40px;
+  right: 60px;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 5px;
-  color: #000;
+  color: #fff;
+  background-color: #3a3a3a;
+  border-radius: 4px;
   cursor: pointer;
 }
-
+@media screen and (max-width: 1100px) {
+  .model.open svg {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .model.open svg {
+    right: 20px;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
 @media screen and (max-width: 850px) {
   .portfolio_pics img {
     width: 300px;
@@ -87,6 +100,12 @@
   }
   .portfolio .title {
     padding: 0 1rem;
+  }
+  .model.open svg {
+    right: 20px;
+    width: 2rem;
+    height: 2rem;
+    padding: 3px;
   }
 }
 
